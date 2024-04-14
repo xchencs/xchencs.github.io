@@ -19,9 +19,5 @@ Guilong Lu, Xiaolin Ju*, <strong>Xiang Chen</strong>, Wenlong Pei, Zhilong Cai<b
 <br>[Link]</li>
 
 
-<li>
-<p><span class="STYLE1">[APSEC-2023]</span> <strong>Assessing the Effectiveness of Vulnerability Detection via Prompt Tuning: An Empirical Study</strong>.<br>
-Guilong Lu, Xiaolin Ju, <strong>Xiang Chen</strong>, Shaoyu Yang, Liang Chen and Hao Shen<br>
-<em>In Proceedings of The 30th Asia-Pacific Software Engineering Conference (APSEC 2023)</em>. 2023. <span class="STYLE1">(CCF C)</span><br>
-[Link] Acceptance Rate: 43/128</li>
+
 
