@@ -1,18 +1,4 @@
-<li>
-<p><span class="STYLE1">[TOSEM] </span><strong>An Empirical Study on Challenges for LLM Application Developers. </strong><br>
-<strong>Xiang Chen</strong>, Chaoyang Gao, Chunyang Chen, Guanbei Zhang, Yong Liu<br>
-<em>ACM Transactions on Software Engineering and Methodology</em>. 2025.<span class="STYLE1"> (CCF A) </span>
-<br>[Link]</li>
 
-<li>
-<p><span class="STYLE1">[JSS]</span> <strong>FedMVA: Enhancing Software Vulnerability Assessment via Federated Multimodal Learning.</strong><br>
-Qingyun Liu, Xiaolin Ju*, <strong>Xiang Chen*</strong>, Lina Gong<br>
-<em>Journal of Systems and Software</em>. 2025. <span class="STYLE1">(CCF B)
-</span>
-<br>[Link]</li>
 
-<li>
-<p><span class="STYLE1">[ASEJ] </span><strong>Improving Prompt Tuning-based Software Vulnerability Assessment by Fusing Source Code and Vulnerability Description. </strong><br>
-Jiyu Wang, <strong>Xiang Chen*</strong>, Wenlong Pei and Shaoyu Yang<br>
-<em>Automated Software Engineering</em>. 2025. <span class="STYLE1"> (CCF B) </span>
-<br>[Link]</li>
+
+
