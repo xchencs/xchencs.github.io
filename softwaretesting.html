@@ -1,77 +1,122 @@
-﻿
-﻿
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118637126-1"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>软件测试技术 — 陈翔</title>
+<meta name="description" content="《软件测试技术》本科课程的通知、教材、授课内容与实践项目。">
+<meta name="author" content="陈翔 (Xiang Chen)">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-118637126-1');
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search).get('theme');
+      var t = (q === 'dark' || q === 'light') ? q :
+        (localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
 </script>
-
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="stylesheet" href="bibtex.css" type="text/css" />
-<title></title>
-<script type="text/javascript">
-<!--
-// Toggle Display of BibTeX
-function toggleBibtex(articleid) {
-	var bib = document.getElementById('bib_'+articleid);
-	if (bib) {
-		if(bib.className.indexOf('bibtex') != -1) {
-		bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
-		}
-	} else {
-		return;
-	}
-}
--->
-</script>
-<style type="text/css">
-<!--
-.STYLE1 {color: #FF0000}
--->
-</style>
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-item"><a href="index.html">Homepage</a></div>
-<div class="menu-item"><a href="teaching.html">Teaching</a></div>
-<div class="menu-item"><a href="publications.html">Publications</a></div>
-<div class="menu-item"><a href="honors.html">Honors</a></div>
-<div class="menu-item"><a href="group/index.html">Research Group</a></div>
-</td>
-<td id="layout-content">
-<h1>软件测试技术</h1>
-<h2>通知</h2>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-zh">陈翔</span><span class="brand-en">XIANG CHEN</span></a>
+    <nav class="content-nav" aria-label="站点导航">
+          <a href="index.html">首页</a>
+          <a href="publications.html">论文</a>
+          <a href="teaching.html" class="active">教学</a>
+          <a href="honors.html">荣誉</a>
+          <a href="group/index.html">课题组</a>
+    </nav>
+    <div class="controls">
+      <div class="lang-switch" role="group" aria-label="语言 / Language">
+        <a class="lang-option active" href="softwaretesting.html" aria-current="true" hreflang="zh-CN">中文</a>
+        <a class="lang-option" href="en/softwaretesting.html" hreflang="en" lang="en">EN</a>
+      </div>
+      <div class="theme-switch" role="group" aria-label="主题">
+        <span class="theme-switch-thumb" aria-hidden="true"></span>
+        <button class="theme-option" type="button" data-theme-value="light" aria-pressed="false">Light</button>
+        <button class="theme-option" type="button" data-theme-value="dark" aria-pressed="false">Dark</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="layout">
+    <aside class="sidebar">
+        <img class="portrait" src="images/cx1.jpg" alt="陈翔" width="108" height="135">
+        <div class="identity">
+          <p class="identity-name">陈翔</p>
+          <p class="latin">XIANG CHEN</p>
+          <p class="role">
+            <span class="role-line">南通大学 · 人工智能与计算机学院</span>
+            <span class="role-line">副教授 · 硕士生导师</span>
+          </p>
+        </div>
+
+        <dl class="metrics">
+          <div><dt>论文</dt><dd>200+</dd></div>
+          <div><dt>引用</dt><dd>6797</dd></div>
+          <div><dt>H-Index</dt><dd>44</dd></div>
+        </dl>
+
+        <ul class="side-contact">
+          <li><a href="https://scholar.google.com/citations?hl=en&user=Q2w5lq0AAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 2 8.4l10 4.4 10-4.4L12 4Z"/><path d="M6 10.7V15c0 1.8 2.7 3.2 6 3.2s6-1.4 6-3.2v-4.3"/></svg>Google Scholar</a></li>
+          <li><a href="https://dblp.uni-trier.de/pid/64/3062-5.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 5.4A2.4 2.4 0 0 1 6.9 3H20v15.6H6.9a2.4 2.4 0 0 0-2.4 2.4V5.4Z"/><path d="M8.4 7.2h7.6M8.4 10.6h5"/></svg>DBLP</a></li>
+          <li><a href="mailto:xchencs@ntu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m3.7 7 8.3 6 8.3-6"/></svg>Email</a></li>
+          <li><a href="images/wx.png"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><path d="M13.8 13.8h2.7v2.7h-2.7zM20.2 13.8v2.5M17 20.2h3.2V17"/></svg>微信公众号</a></li>
+          <li><button type="button" class="cv-print" onclick="window.print()"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7.4A2.4 2.4 0 0 0 5 5.4v13.2A2.4 2.4 0 0 0 7.4 21h9.2a2.4 2.4 0 0 0 2.4-2.4V8l-5-5Z"/><path d="M14 3v5h5"/></svg>打印 / 存为 PDF</button></li>
+        </ul>
+
+        <div class="side-block">
+          <p class="side-title">智能软件工程研究组</p>
+          <p class="side-text">隶属南通大学人工智能与计算机学院，研究智能软件工程、软件仓库挖掘、软件测试与维护。<a href="group/index.html">了解课题组 →</a></p>
+        </div>
+
+        <div class="side-card">
+          <p class="card-title">招收硕士研究生</p>
+          <p class="card-text">每年 3–4 人，方向包括大语言模型、深度学习与软件工程。也欢迎本科生参与科研与竞赛。</p>
+          <a class="card-link" href="mailto:xchencs@ntu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m3.7 7 8.3 6 8.3-6"/></svg><span>xchencs@ntu.edu.cn</span></a>
+        </div>
+
+        <div class="side-meta">
+          <span class="meta-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6.6-5.6 6.6-11A6.6 6.6 0 0 0 5.4 10c0 5.4 6.6 11 6.6 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>南通 <time id="localtime">--:--</time></span>
+          <span class="meta-item">更新于 2026 年 10 月</span>
+        </div>
+    </aside>
+
+    <main id="main" class="content">
+<h1 class="page-title">软件测试技术</h1>
+<p class="lede">本科课程材料：通知、教材、慕课、授课内容与实践项目。</p>
+      <nav class="content-nav sub" aria-label="本页目录"><a href="#sec-1">通知</a><a href="#sec-2">教材</a><a href="#sec-3">慕课</a><a href="#sec-4">授课内容</a><a href="#sec-5">实践项目</a><a href="#sec-6">联系方式</a></nav>
+<div class="prose">
+<h2 id="sec-1">通知</h2>
 <h3>积极参加<a href="http://www.mooctest.org/">全国软件测试大赛</a></h3>
 
 <h3>去爱课程 注册用户  去慕测网 注册用户</h3>
 <h3>主校区QQ群：1027373837    杏林校区QQ群：1002965408</h3>
-<h2>教材</h2>
+<h2 id="sec-2">教材</h2>
 <p>朱少民。<a href="https://item.jd.com/11563286.html">软件测试方法和技术（第3版）。</a>清华大学出版社。 </p>
 <p> 王兴亚 王智钢 赵源 陈振宇 。开发者测试。机械工业出版社。</p> 
 <p>Paul Ammann and Jeff Offutt. <a href="https://item.jd.com/12477814.html?dist=jd">软件测试基础（第2版）。</a>机械工业出版社</p>
 <p>Gordon Fraser等人. Software Testing. 讲义</p>
 <p>相关综述论文</p>
 
-<h2>慕课</h2>
+<h2 id="sec-3">慕课</h2>
 <p> 慕课1. 软件测试 陈振宇 南京大学 爱课程链接 [<a href="http://www.icourse163.org/course/NJU-1001773008">Link</a>]
-<p> 慕课1a. 软件测试 陈振宇 南京大学  慕测平台链接 [<a href="http://www.mooctest.net">Link</a>] <br>
+</p><p> 慕课1a. 软件测试 陈振宇 南京大学  慕测平台链接 [<a href="http://www.mooctest.net">Link</a>] <br/>
   包括 慕测软件测试基础课程、慕测开发者测试课程、慕测Web应用测试课程、慕测移动应用测试课程
-<p> 慕课2. 软件测试 郑炜  西北工业大学 [<a href="http://www.icourse163.org/course/NWPU-1003591005">Link</a>]
-<p> 慕课3. 软件测试 贺平 [<a href="http://www.icourses.cn/sCourse/course_3596.html">Link</a>]
-<p> 慕课4. 软件测试与质量 武剑洁 华中科技大学 [<a href="http://www.icourse163.org/course/HUST-1001907003">Link</a>]
-<h2>授课内容</h2>
+</p><p> 慕课2. 软件测试 郑炜  西北工业大学 [<a href="http://www.icourse163.org/course/NWPU-1003591005">Link</a>]
+</p><p> 慕课3. 软件测试 贺平 [<a href="http://www.icourses.cn/sCourse/course_3596.html">Link</a>]
+</p><p> 慕课4. 软件测试与质量 武剑洁 华中科技大学 [<a href="http://www.icourse163.org/course/HUST-1001907003">Link</a>]
+</p><h2 id="sec-4">授课内容</h2>
 <p>[第1周] 第一章 绪论 </p> 
 
 <ol>
@@ -157,29 +202,30 @@ function toggleBibtex(articleid) {
 
 
 
-<h2>实践项目</h2>
+<h2 id="sec-5">实践项目</h2>
 <p>[第4周] 项目1： 单元测试用例设计 <span class="STYLE1">参考</span> 慕课1a 慕测开发者测试课程</p> 
 
 
 <p>[第8周] 项目2： Web应用测试 <span class="STYLE1">参考</span> 慕课1a 慕测Web应用测试课程</p> 
 
 <p>[第12周] 项目3： 移动应用测试 <span class="STYLE1">参考</span> 慕课1a 慕测移动应用测试课程 </p>
-<p>&nbsp;</p>
-<h2>联系方式</h2>
-<p>办公室：江苏省南通市啬园路9号南通大学方肇周楼606办公室 <br />
- 邮箱：xchencs at ntu dot edu dot cn <br />
-</p>
 
-<div id="footer">
-<div id="footer-text">
-Page generated 2017-07-10 16:18:50 中国标准时间, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+<h2 id="sec-6">联系方式</h2>
+<p>办公室：江苏省南通市啬园路9号南通大学方肇周楼606办公室 <br/>
+ 邮箱：xchencs at ntu dot edu dot cn <br/>
+</p>
+      </div>
+    </main>
+  </div>
 </div>
-</div>
-</td>
-</tr>
-</table>
-<p class="biblist">&nbsp;</p>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 陈翔 · Xiang Chen</p>
+    <p>最近更新：2026 年 10 月</p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
 </body>
 </html>
-
-

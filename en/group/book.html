@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Textbooks &amp; MOOCs · smartSE</title>
+<meta name="description" content="Recommended textbooks and online courses.">
+<meta name="author" content="Xiang Chen">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="zh-CN" href="../../group/book.html">
+<link rel="alternate" hreflang="en" href="book.html">
+<link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search).get('theme');
+      var t = (q === 'dark' || q === 'light') ? q :
+        (localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="../index.html"><span class="brand-zh">陈翔</span><span class="brand-en">XIANG CHEN</span></a>
+    <nav class="content-nav" aria-label="Site">
+          <a href="../index.html">Home</a>
+          <a href="../publications.html">Publications</a>
+          <a href="../teaching.html">Teaching</a>
+          <a href="../honors.html">Honors</a>
+          <a href="../group/index.html" class="active">Group</a>
+    </nav>
+    <div class="controls">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <a class="lang-option" href="../../group/book.html" hreflang="zh-CN" lang="zh-CN">中文</a>
+        <a class="lang-option active" href="book.html" aria-current="true" hreflang="en">EN</a>
+      </div>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <span class="theme-switch-thumb" aria-hidden="true"></span>
+        <button class="theme-option" type="button" data-theme-value="light" aria-pressed="false">Light</button>
+        <button class="theme-option" type="button" data-theme-value="dark" aria-pressed="false">Dark</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="layout">
+    <aside class="sidebar">
+      <img class="portrait" src="../../images/cx1.jpg" alt="Xiang Chen" width="108" height="135">
+      <div class="identity">
+        <p class="identity-name">陈翔</p>
+        <p class="latin">XIANG CHEN</p>
+        <p class="role">
+          <span class="role-line">Nantong University</span>
+          <span class="role-line">School of AI and Computer Science</span>
+          <span class="role-line">Associate Professor · Master's Supervisor</span>
+        </p>
+      </div>
+
+      <dl class="metrics">
+        <div><dt>Papers</dt><dd>200+</dd></div>
+        <div><dt>Citations</dt><dd>6797</dd></div>
+        <div><dt>H-Index</dt><dd>44</dd></div>
+      </dl>
+
+      <ul class="side-contact">
+        <li><a href="https://scholar.google.com/citations?hl=en&user=Q2w5lq0AAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 2 8.4l10 4.4 10-4.4L12 4Z"/><path d="M6 10.7V15c0 1.8 2.7 3.2 6 3.2s6-1.4 6-3.2v-4.3"/></svg>Google Scholar</a></li>
+        <li><a href="https://dblp.uni-trier.de/pid/64/3062-5.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 5.4A2.4 2.4 0 0 1 6.9 3H20v15.6H6.9a2.4 2.4 0 0 0-2.4 2.4V5.4Z"/><path d="M8.4 7.2h7.6M8.4 10.6h5"/></svg>DBLP</a></li>
+        <li><a href="mailto:xchencs@ntu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m3.7 7 8.3 6 8.3-6"/></svg>Email</a></li>
+        <li><a href="../../images/wx.png"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><path d="M13.8 13.8h2.7v2.7h-2.7zM20.2 13.8v2.5M17 20.2h3.2V17"/></svg>WeChat</a></li>
+        <li><button type="button" class="cv-print" onclick="window.print()"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7.4A2.4 2.4 0 0 0 5 5.4v13.2A2.4 2.4 0 0 0 7.4 21h9.2a2.4 2.4 0 0 0 2.4-2.4V8l-5-5Z"/><path d="M14 3v5h5"/></svg>Print / Save as PDF</button></li>
+      </ul>
+
+      <div class="side-block">
+        <p class="side-title">smartSE Research Group</p>
+        <p class="side-text">Intelligent software engineering, software repository mining, empirical software engineering, software testing and maintenance. <a href="index.html">Meet the group →</a></p>
+      </div>
+
+      <div class="side-card">
+        <p class="card-title">Prospective students</p>
+        <p class="card-text">I admit 3–4 master's students each year, working on large language models, deep learning and software engineering. Undergraduates are welcome too.</p>
+        <a class="card-link" href="mailto:xchencs@ntu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m3.7 7 8.3 6 8.3-6"/></svg><span>xchencs@ntu.edu.cn</span></a>
+      </div>
+
+      <div class="side-meta">
+        <span class="meta-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6.6-5.6 6.6-11A6.6 6.6 0 0 0 5.4 10c0 5.4 6.6 11 6.6 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>Nantong <time id="localtime">--:--</time></span>
+        <span class="meta-item">Updated Oct 2026</span>
+      </div>
+    </aside>
+
+    <main id="main" class="content">
+      <h1 class="page-title">Textbooks &amp; MOOCs</h1>
+      <p class="lede">Textbooks and online courses recommended by the group.</p>
+      <nav class="content-nav sub" id="group-nav" aria-label="Group">
+        <a href="index.html">About</a>
+        <a href="member.html">Members</a>
+        <a href="picture.html">Gallery</a>
+        <a href="material.html">Resources</a>
+        <a href="journal.html">Venues</a>
+        <a href="honors.html">Competitions</a>
+        <a href="book.html" class="active">Textbooks</a>
+      </nav>
+      <p class="lede">Book titles are kept in Chinese.</p>
+<h2 id="sec-1">Recommended textbooks (please use the latest edition; suggestions are welcome)</h2>
+<p class=note>Edition information checked in October 2026. Titles are kept in Chinese.</p>
+<h3>C</h3>
+<ol>
+  <li>King 《C语言程序设计：现代方法》 （第2版） </li>
+  <li>Kernighan 《C程序设计语言》 （第2版）</li>
+</ol>
+<h3>C++</h3>
+<ol>
+<li>Lippman 《C++ primer》 （第5版）</li>
+<li>Eckel 《C++编程思想》 （第2版）</li>
+<li>Eckel 《深度探索C++对象模型》</li>
+<li>Meyers 《Effective c++:改善程序与设计的55个具体做法》 （第3版）</li>
+<li>Stroustrup 《C++程序设计语言（第1～4部分）》 （第4版）</li>
+<li>Josuttis 《C++标准库》 （第2版）</li>
+</ol>
+<h3>Java</h3>
+<ol>
+<li>Horstmann 《Java核心技术》 （第12版）</li>
+<li>Eckel 《Thinking in Java》 （第4版）</li>
+<li>Bloch 《Effective Java》 （第3版）</li>
+<li>周志明 《深入理解Java虚拟机：JVM高级特性与最佳实践》(第3版) </li>
+<li>杨冠宝 《阿里巴巴Java开发手册》 (第2版)</li>
+</ol>
+
+
+<h3>Python</h3>
+<ol>
+<li>Hetland 《python基础教程》 （第3版）</li>
+<li>McKinney 《利用Python进行数据分析》 （原书第3版）</li>
+<li>Slatkin 《Effective Python》（第3版，125 个具体做法）</li>
+</ol>
+
+<h3>Data structures</h3>
+<ol>
+<li>Weiss 《数据结构与算法分析：C++语言描述》（第4版）／《数据结构与算法分析：Java语言描述》（第3版）
+</li><li>程杰 《大话数据结构（溢彩加强版）》 </li>
+<li>邓俊辉 《数据结构（C++语言版）》 第3版</li>
+</ol>
+
+<h3>Operating systems</h3>
+<ol>
+<li>Silberschatz 《操作系统概念》 （第10版）</li>
+<li>Tanenbaum 《现代操作系统》 （原书第5版）</li>
+<li>Tanenbaum《操作系统设计与实现》（第3版）</li>
+<li>Arpaci-Dusseau 《操作系统导论》 《Operation Systems: Three Easy Pieces》</li>
+<li>陈海波《现代操作系统：原理与实现》</li>
+<li>于渊 《自己动手写操作系统》</li>
+<li> 川合秀实《30天自制操作系统》</li>
+</ol>
+
+
+<h3>Computer networks</h3>
+<ol>
+<li>Kurose 《计算机网络:自顶向下方法》 （第8版）</li>
+<li>Tanenbaum 《计算机网络》 （第5版） </li>
+<li>Stevens 《TCP/IP详解》 （第2版）</li>
+<li>谢希仁 《计算机网络》 （第9版）</li>
+<li>Coulouris 《分布式系统:概念与设计》 (第5版)</li>
+</ol>
+
+
+<h3>Database systems</h3>
+<ol>
+<li>Silberschatz 《数据库系统概念》 （第7版）</li>
+</ol>
+
+
+<h3>Compilers</h3>
+<ol>
+<li>Aho 《编译原理》 （第2版）</li>
+<li>Appel 《现代编译原理 C语言描述 修订版》</li>
+</ol>
+
+
+<h3>Discrete mathematics</h3>
+<ol>
+<li>Rosen 《离散数学及其应用》 （第8版）</li>
+<li>Graham 《具体数学：计算机科学基础》 （第2版）</li>
+<li>屈婉玲 《离散数学》 （第3版）</li>
+<li>Brualdi 《组合数学》（第5版）</li>
+</ol>
+
+
+
+<h3>Algorithms</h3>
+<ol>
+<li>Cormen 《算法导论》（原书第4版）</li>
+<li>Sedgewick《算法》（第4版）</li>
+<li>Dasgupta 《算法概论》</li>
+<li>《编程之美：微软技术面试心得》</li>
+<li>《编程珠玑》 （第2版 修订版）</li>
+<li>屈婉玲 《算法设计与分析》 （第2版）</li>
+<li>王晓东  《算法设计与分析》 （第4版）</li>
+<li>付东来 《labuladong的算法小抄》
+</li><li>孙秀洋 《代码随想录——跟着Carl学算法》
+</li><li>周娟 《程序设计竞赛入门》
+</li></ol>
+
+
+
+<h3>Software engineering</h3>
+<ol>
+<li>Pressma 《软件工程：实践者的研究方法》 （第9版）</li>
+<li>Pohl  《需求工程·基础、原理和技术》</li>
+<li>Brooks 《人月神话》</li>
+<li>Ammann 《软件测试基础》 （第2版）</li>
+<li>谭云杰  《大象：Thinking in UML》 （第2版）</li>
+</ol>
+
+
+<h3>Design patterns</h3>
+<ol>
+<li>Freeman 《Head First设计模式》（第二版）</li>
+<li>《大话设计模式》
+</li><li>Fowler 《重构:改善既有代码的设计》 (第2版)</li>
+</ol>
+
+
+<h3>Programming languages</h3>
+<ol>
+<li>Abelson 《计算机程序的构造和解释》 （第2版）</li>
+<li>Sebesta 《程序设计语言原理》 （第12版）</li>
+<li>Scott《程序设计语言：实践之路》（第3版）</li>
+<li>Flemming Nielson 《程序分析原理》</li>
+<li>Maurice Herlihy 《多处理器编程的艺术》（原书第2版）</li>
+</ol>
+
+
+<h3>Computer hardware</h3>
+<ol>
+<li>Bryant 《深入理解计算机系统》 （第3版）</li>
+<li>袁春风 《计算机系统基础》 （第2版）</li>
+<li>Patterson 《计算机组成与设计：硬件/软件接口》 (第6版)</li>
+<li>Patterson 《计算机体系结构：量化研究方法》 （第6版）</li>
+</ol>
+
+
+<h3>Theory of computation</h3>
+<ol>
+<li>Sipser《计算理论导引》 （第3版）</li>
+</ol>
+
+
+
+<h3>Artificial intelligence</h3>
+<ol>
+<li>周志华 《机器学习》</li>
+<li>周志华 《机器学习理论导引》</li>
+<li>GoodFellow 《深度学习》</li>
+<li>Aston Zhang 等《动手学深度学习（PyTorch版）》</li>
+<li>刘铁岩 《分布式机器学习：算法、理论与实践》</li>
+<li>杨强等人《迁移学习》 </li>
+<li>《统计学习导论——基于R应用》（原书第2版）</li>
+<li>Duda 《模式分类》 （第2版）</li>
+<li> Baeza-Yates 《现代信息检索》 （第2版）</li>
+<li>Sutton 《强化学习》 (第2版) </li>
+<li>尼克 《人工智能简史》</li>
+<li>《逻辑的引擎》</li>
+</ol>
+
+<h3>Books by Jun Wu</h3>
+<ol>
+<li>《浪潮之巅》 （第4版）</li>
+<li>《数学之美》 （第3版）</li>
+<li>《文明之光》</li>
+<li>《大学之路》 （第2版）</li>
+<li> 《计算之魂》
+</li><li>《态度》、《见识》、《格局》
+</li><li>《数学通识讲义》、《阅读与写作讲义》
+</li><li>《软能力》、《元智慧》
+</li></ol>
+
+
+<h3>Linux</h3>
+<ol>
+<li>《鸟哥的Linux私房菜》 (第4版)</li>
+<li>Matthew 《Linux程序设计》 （第4版）</li>
+<li>Stevens 《UNIX环境高级编程》 （第3版）</li>
+</ol>
+
+
+
+<h3>Scratch for kids</h3>
+
+<h3>Informatics olympiad</h3>
+<ol>
+<li>CCF中学生计算机程序设计-入门篇、基础篇、提高篇
+</li></ol>
+<h2 id="sec-2">Recommended MOOCs</h2>
+<h3><a href="https://www.coursera.org/" target="_blank">https://www.coursera.org/</a> </h3>
+<h3><a href="http://xuetangx.com/" target="_blank">http://xuetangx.com</a></h3>
+<h3><a href="https://www.bilibili.com">https://www.bilibili.com</a></h3>
+      
+    </main>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Xiang Chen</p>
+    <p>Last updated: October 2026</p>
+  </div>
+</footer>
+
+<script src="../../assets/site.js"></script>
+</body>
+</html>

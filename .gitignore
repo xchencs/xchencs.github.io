@@ -1,0 +1,4 @@
+# 本地预览截图，不提交
+.preview/
+__pycache__/
+*.pyc

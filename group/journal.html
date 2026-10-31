@@ -1,72 +1,132 @@
-
-﻿
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="stylesheet" href="bibtex.css" type="text/css" />
-<title></title>
-<script type="text/javascript">
-<!--
-// Toggle Display of BibTeX
-function toggleBibtex(articleid) {
-	var bib = document.getElementById('bib_'+articleid);
-	if (bib) {
-		if(bib.className.indexOf('bibtex') != -1) {
-		bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
-		}
-	} else {
-		return;
-	}
-}
--->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>期刊与会议 — 智能软件工程研究组</title>
+<meta name="description" content="课题组关注的国际期刊、国际会议与国内期刊。">
+<meta name="author" content="陈翔 (Xiang Chen)">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search).get('theme');
+      var t = (q === 'dark' || q === 'light') ? q :
+        (localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
 </script>
-<style type="text/css">
-<!--
-.STYLE1 {color: #FF0000}
--->
-</style>
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td width="181" id="layout-menu">
-<div class="menu-item"><a href="index.html">首页</a></div>
-<div class="menu-item"><a href="member.html">团队成员</a></div>
-<div class="menu-item"><a href="picture.html">课题组相册</a></div>
-<div class="menu-item"><a href="material.html">相关资料</a></div>
-<div class="menu-item"><a href="journal.html">关注的期刊和会议</a></div>
-<div class="menu-item"><a href="honors.html">关注的学科竞赛</a></div>
-<div class="menu-item"><a href="book.html">推荐的教材和慕课</a></div>
-</td>
-<td width="887" id="layout-content">
+<a class="skip-link" href="#main">跳到主要内容</a>
 
-<h2>Call for paper</h2>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="../index.html"><span class="brand-zh">陈翔</span><span class="brand-en">XIANG CHEN</span></a>
+    <nav class="content-nav" aria-label="站点导航">
+          <a href="../index.html">首页</a>
+          <a href="../publications.html">论文</a>
+          <a href="../teaching.html">教学</a>
+          <a href="../honors.html">荣誉</a>
+          <a href="../group/index.html" class="active">课题组</a>
+    </nav>
+    <div class="controls">
+      <div class="lang-switch" role="group" aria-label="语言 / Language">
+        <a class="lang-option active" href="journal.html" aria-current="true" hreflang="zh-CN">中文</a>
+        <a class="lang-option" href="../en/group/journal.html" hreflang="en" lang="en">EN</a>
+      </div>
+      <div class="theme-switch" role="group" aria-label="主题">
+        <span class="theme-switch-thumb" aria-hidden="true"></span>
+        <button class="theme-option" type="button" data-theme-value="light" aria-pressed="false">Light</button>
+        <button class="theme-option" type="button" data-theme-value="dark" aria-pressed="false">Dark</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="layout">
+    <aside class="sidebar">
+        <img class="portrait" src="../images/cx1.jpg" alt="陈翔" width="108" height="135">
+        <div class="identity">
+          <p class="identity-name">陈翔</p>
+          <p class="latin">XIANG CHEN</p>
+          <p class="role">
+            <span class="role-line">南通大学 · 人工智能与计算机学院</span>
+            <span class="role-line">副教授 · 硕士生导师</span>
+          </p>
+        </div>
+
+        <dl class="metrics">
+          <div><dt>论文</dt><dd>200+</dd></div>
+          <div><dt>引用</dt><dd>6797</dd></div>
+          <div><dt>H-Index</dt><dd>44</dd></div>
+        </dl>
+
+        <ul class="side-contact">
+          <li><a href="https://scholar.google.com/citations?hl=en&user=Q2w5lq0AAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 2 8.4l10 4.4 10-4.4L12 4Z"/><path d="M6 10.7V15c0 1.8 2.7 3.2 6 3.2s6-1.4 6-3.2v-4.3"/></svg>Google Scholar</a></li>
+          <li><a href="https://dblp.uni-trier.de/pid/64/3062-5.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 5.4A2.4 2.4 0 0 1 6.9 3H20v15.6H6.9a2.4 2.4 0 0 0-2.4 2.4V5.4Z"/><path d="M8.4 7.2h7.6M8.4 10.6h5"/></svg>DBLP</a></li>
+          <li><a href="mailto:xchencs@ntu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m3.7 7 8.3 6 8.3-6"/></svg>Email</a></li>
+          <li><a href="../images/wx.png"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><path d="M13.8 13.8h2.7v2.7h-2.7zM20.2 13.8v2.5M17 20.2h3.2V17"/></svg>微信公众号</a></li>
+          <li><button type="button" class="cv-print" onclick="window.print()"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7.4A2.4 2.4 0 0 0 5 5.4v13.2A2.4 2.4 0 0 0 7.4 21h9.2a2.4 2.4 0 0 0 2.4-2.4V8l-5-5Z"/><path d="M14 3v5h5"/></svg>打印 / 存为 PDF</button></li>
+        </ul>
+
+        <div class="side-block">
+          <p class="side-title">智能软件工程研究组</p>
+          <p class="side-text">隶属南通大学人工智能与计算机学院，研究智能软件工程、软件仓库挖掘、软件测试与维护。<a href="../group/index.html">了解课题组 →</a></p>
+        </div>
+
+        <div class="side-card">
+          <p class="card-title">招收硕士研究生</p>
+          <p class="card-text">每年 3–4 人，方向包括大语言模型、深度学习与软件工程。也欢迎本科生参与科研与竞赛。</p>
+          <a class="card-link" href="mailto:xchencs@ntu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m3.7 7 8.3 6 8.3-6"/></svg><span>xchencs@ntu.edu.cn</span></a>
+        </div>
+
+        <div class="side-meta">
+          <span class="meta-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6.6-5.6 6.6-11A6.6 6.6 0 0 0 5.4 10c0 5.4 6.6 11 6.6 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>南通 <time id="localtime">--:--</time></span>
+          <span class="meta-item">更新于 2026 年 10 月</span>
+        </div>
+    </aside>
+
+    <main id="main" class="content">
+<h1 class="page-title">关注的期刊和会议</h1>
+<p class="lede">课题组常年关注与投稿的期刊和会议，按国际期刊、国际会议与国内期刊分组。</p>
+<nav class="content-nav sub" id="group-nav" aria-label="课题组">
+          <a href="index.html">简介</a>
+          <a href="member.html">团队</a>
+          <a href="picture.html">相册</a>
+          <a href="material.html">资料</a>
+          <a href="journal.html" class="active">期刊会议</a>
+          <a href="honors.html">竞赛</a>
+          <a href="book.html">教材</a>
+      </nav>
+      <nav class="content-nav sub" aria-label="本页目录"><a href="#sec-1">Call for paper</a><a href="#sec-2">国际期刊</a><a href="#sec-3">国际会议</a><a href="#sec-4">国内一级期刊</a><a href="#sec-5">国内核心期刊</a><a href="#sec-6">计算机教育期刊和会议</a></nav>
+<div class="prose">
+<h2 id="sec-1">Call for paper</h2>
 
 <p> ISSTA 2026 2026-01-30 United States
 
-<p> ASE 2026 2026-05
+</p><p> ASE 2026 2026-05
 
-<p> FSE 2026  2026-09
+</p><p> FSE 2026  2026-09
 
-<p> ICSE 2026 2026-09
+</p><p> ICSE 2026 2026-09
 
-<p> ACL 2026 2026-01-06
+</p><p> ACL 2026 2026-01-06
 
-<p> IJCAI 2026 2026-01-20
+</p><p> IJCAI 2026 2026-01-20
 
-<p>  ICML 2026 2026-01-29 
+</p><p>  ICML 2026 2026-01-29 
 
-<p>  AAAI 2026 2025-08-02 
+</p><p>  AAAI 2026 2025-08-02 
 
-<p>  NeurIPS 2025 2025-05-16
+</p><p>  NeurIPS 2025 2025-05-16
 
-<p> EMNLP 2025 2025-05-20 
-
-
+</p><p> EMNLP 2025 2025-05-20 
 
 
 
@@ -75,12 +135,14 @@ function toggleBibtex(articleid) {
 
 
 
-<h2>关注的国际期刊 </h2>
+
+
+</p><h2 id="sec-2">关注的国际期刊 </h2>
 <h3>CCF A类期刊</h3>
-<p>&#10004 <a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&amp;punumber=32">IEEE Transactions on Software Engineering</a> (TSE) *8 </p>
-<p>&#10004 <a href="http://tosem.acm.org/">ACM Transactions on Software Engineering and Methodology</a> (TOSEM)  *14 </p>
-<p>&#10004 Science China Information Sciences (SCIS) *1</p>
-<p>&#10004 ACM Computing Surveys（CSUR）*1</p>
+<p>✔ <a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&amp;punumber=32">IEEE Transactions on Software Engineering</a> (TSE) *8 </p>
+<p>✔ <a href="http://tosem.acm.org/">ACM Transactions on Software Engineering and Methodology</a> (TOSEM)  *14 </p>
+<p>✔ Science China Information Sciences (SCIS) *1</p>
+<p>✔ ACM Computing Surveys（CSUR）*1</p>
 <p> IEEE Transactions on Services Computing (TSC)</p>
 <p> IEEE Transactions on Dependable and Secure Computing (TDSC)</p>
 <p>IEEE Transactions on Information Forensics and Security (TIFS)</p>
@@ -90,45 +152,45 @@ function toggleBibtex(articleid) {
 
 
 <h3>CCF B类期刊</h3>
-<p>&#10004  <a href="https://link.springer.com/journal/10664">Empirical Software Engineering</a> (EMSE) *4 </p>
-<p>&#10004 <a href="https://www.journals.elsevier.com/information-and-software-technology/">Information and Software Technology</a> (IST) *20</p>
-<p>&#10004 <a href="https://www.journals.elsevier.com/journal-of-systems-and-software/">Journal of Systems and Software</a> (JSS) *25  </p>
-<p>&#10004  <a href="https://link.springer.com/journal/10515">Automated Software Engineering</a> (ASEJ) *11 </p>
-<p>&#10004 <a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24">IEEE Transactions on Reliability</a> (TRel) *6</p>
+<p>✔  <a href="https://link.springer.com/journal/10664">Empirical Software Engineering</a> (EMSE) *4 </p>
+<p>✔ <a href="https://www.journals.elsevier.com/information-and-software-technology/">Information and Software Technology</a> (IST) *20</p>
+<p>✔ <a href="https://www.journals.elsevier.com/journal-of-systems-and-software/">Journal of Systems and Software</a> (JSS) *25  </p>
+<p>✔  <a href="https://link.springer.com/journal/10515">Automated Software Engineering</a> (ASEJ) *11 </p>
+<p>✔ <a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24">IEEE Transactions on Reliability</a> (TRel) *6</p>
 
-<p>&#10004 <a href="https://onlinelibrary.wiley.com/journal/20477481">Journal of Software: Evolution and Process</a> (JSEP) *5 </p>
-<p>&#10004 <a href="http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1689">Software Testing, Verification and Reliability</a> (STVR) *1 </p>
-<p>&#10004 <a href="http://www.springer.com/computer/journal/11390">Journal of Computer Science and Technology</a> (JCST) *4 </p>
-<p>&#10004 <a href="https://onlinelibrary.wiley.com/journal/1097024x">Software - Practice and Experience </a>（SPE）*1 </p>
-<p>&#10004 <a href="https://digital-library.theiet.org/content/journals/iet-sen">IET Software</a> (IETS) *2 </p>
-<p>&#10004 <a href="https://www.journals.elsevier.com/science-of-computer-programming/">Science of Computer Programming</a> （SCP）*3</p>
-<p>&#10004 Computers & Security (COSE) *2</p>
-<p>&#10004 Information Processing and Management (IPM) *1</p>
-<p>&#10004 Information Science (INS) *1</p>
+<p>✔ <a href="https://onlinelibrary.wiley.com/journal/20477481">Journal of Software: Evolution and Process</a> (JSEP) *5 </p>
+<p>✔ <a href="http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1689">Software Testing, Verification and Reliability</a> (STVR) *1 </p>
+<p>✔ <a href="http://www.springer.com/computer/journal/11390">Journal of Computer Science and Technology</a> (JCST) *4 </p>
+<p>✔ <a href="https://onlinelibrary.wiley.com/journal/1097024x">Software - Practice and Experience </a>（SPE）*1 </p>
+<p>✔ <a href="https://digital-library.theiet.org/content/journals/iet-sen">IET Software</a> (IETS) *2 </p>
+<p>✔ <a href="https://www.journals.elsevier.com/science-of-computer-programming/">Science of Computer Programming</a> （SCP）*3</p>
+<p>✔ Computers &amp; Security (COSE) *2</p>
+<p>✔ Information Processing and Management (IPM) *1</p>
+<p>✔ Information Science (INS) *1</p>
 <p><a href="https://www.computer.org/csdl/magazine/so">IEEE Software </a></p>
 <p><a href="https://www.springer.com/journal/11704">Frontiers of Computer Science （FCS）</a> </p>
 
 
 <h3>CCF C类期刊</h3>
 
-<p>&#10004 <a href="https://link.springer.com/journal/11219">Software Quality Journal</a> (SQJ) *2 </p>
-<p>&#10004 <a href="http://www.worldscientific.com/worldscinet/ijseke">International Journal of Software Engineering and Knowledge Engineering</a> (IJSEKE) *2</p>
-<p>&#10004 <a href="https://www.journals.elsevier.com/knowledge-based-systems">Knowledge-based Systems</a> (Full Length Article)  *1</p>
-<p>&#10004 <a href="https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence">Engineering Applications of Artificial Intelligence</a>  *2</p>
-<p>&#10004 <a href="https://www.sciencedirect.com/journal/applied-soft-computing">Applied Soft Computing </a> *1</p>
+<p>✔ <a href="https://link.springer.com/journal/11219">Software Quality Journal</a> (SQJ) *2 </p>
+<p>✔ <a href="http://www.worldscientific.com/worldscinet/ijseke">International Journal of Software Engineering and Knowledge Engineering</a> (IJSEKE) *2</p>
+<p>✔ <a href="https://www.journals.elsevier.com/knowledge-based-systems">Knowledge-based Systems</a> (Full Length Article)  *1</p>
+<p>✔ <a href="https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence">Engineering Applications of Artificial Intelligence</a>  *2</p>
+<p>✔ <a href="https://www.sciencedirect.com/journal/applied-soft-computing">Applied Soft Computing </a> *1</p>
 <p><a href="https://www.sciencedirect.com/journal/expert-systems-with-applications">Expert Systems With Applications</a> (Full Length Article)</p>
 
 
 
-<h2>关注的国际会议</h2>
+<h2 id="sec-3">关注的国际会议</h2>
 <h3>CCF A类会议</h3>
 
-<p>&#10004 ICSE *1 with 1 best paper</p>
-<p>&#10004 ESEC/FSE *1 </p>
-<p>&#10004 ASE *6 </p>
-<p>&#10004 ISSTA*2</p>
+<p>✔ ICSE *1 with 1 best paper</p>
+<p>✔ ESEC/FSE *1 </p>
+<p>✔ ASE *6 </p>
+<p>✔ ISSTA*2</p>
 <p>CCS</p>
-<p>S&P</p>
+<p>S&amp;P</p>
 <p>USENIX Security</p>
 <p>NDSS</p>
 <p>SIGKDD</p>
@@ -140,40 +202,38 @@ function toggleBibtex(articleid) {
 
 
 <h3>CCF B类会议</h3>
-<p>&#10004  ICPC *2 with 1 best paper</p>
-<p>&#10004 ICSME *2</p>
-<p>&#10004 SANER *2</p>
-<p>&#10004 ISSRE *2</p>
+<p>✔  ICPC *2 with 1 best paper</p>
+<p>✔ ICSME *2</p>
+<p>✔ SANER *2</p>
+<p>✔ ISSRE *2</p>
 <p>EMNLP</p>
 
 <h3>CCF C类会议</h3>
-<p>&#10004 COMPSAC *9 </p>
-<p>&#10004 APSEC *6 </p>
-<p>&#10004 QRS *4 </p>
-<p>&#10004 SEKE *5 </p>
-<p>&#10004 SAC *3 </p>
-<p>&#10004 Internetware *4  </p>
+<p>✔ COMPSAC *9 </p>
+<p>✔ APSEC *6 </p>
+<p>✔ QRS *4 </p>
+<p>✔ SEKE *5 </p>
+<p>✔ SAC *3 </p>
+<p>✔ Internetware *4  </p>
 <p>ICST</p>
 <p>MSR</p>
 
 
 
-<h2>关注的国内一级期刊</h2>
-<p>&#10004 <a href="http://engine.scichina.com/publisher/scp/journal/SSI?slug=Overview">中国科学：信息科学（中文）</a> *2 </p>
-<p>&#10004 <a href="http://cjc.ict.ac.cn/">计算机学报</a> *7 </p>
-<p>&#10004 <a href="http://www.jos.org.cn/ch/index.aspx">软件学报</a> *37 </p>
-<p>&#10004 <a href="http://crad.ict.ac.cn/CN/volumn/home.shtml">计算机研究与发展</a> *5 </p>
-<p>&#10004 <a href="http://manu57.magtech.com.cn/Jwk_dzxb/CN/volumn/current.shtml">电子学报（中英文）</a> *4  </p>
-<p>&#10004 信息安全学报 * 2 <p>
+<h2 id="sec-4">关注的国内一级期刊</h2>
+<p>✔ <a href="http://engine.scichina.com/publisher/scp/journal/SSI?slug=Overview">中国科学：信息科学（中文）</a> *2 </p>
+<p>✔ <a href="http://cjc.ict.ac.cn/">计算机学报</a> *7 </p>
+<p>✔ <a href="http://www.jos.org.cn/ch/index.aspx">软件学报</a> *37 </p>
+<p>✔ <a href="http://crad.ict.ac.cn/CN/volumn/home.shtml">计算机研究与发展</a> *5 </p>
+<p>✔ <a href="http://manu57.magtech.com.cn/Jwk_dzxb/CN/volumn/current.shtml">电子学报（中英文）</a> *4  </p>
+<p>✔ 信息安全学报 * 2 </p><h2 id="sec-5">关注的国内核心期刊</h2>
+<p>✔ <a href="http://fcst.ceaj.org/CN/volumn/home.shtml">计算机科学与探索</a> *2</p>
+<p>✔ <a href="http://www.jsjkx.com/jsjkx/ch/index.aspx">计算机科学</a> *7 </p>
+<p>✔ <a href="http://www.arocmag.com/">计算机应用研究 *5 </a></p>
 
-<h2>关注的国内核心期刊</h2>
-<p>&#10004 <a href="http://fcst.ceaj.org/CN/volumn/home.shtml">计算机科学与探索</a> *2</p>
-<p>&#10004 <a href="http://www.jsjkx.com/jsjkx/ch/index.aspx">计算机科学</a> *7 </p>
-<p>&#10004 <a href="http://www.arocmag.com/">计算机应用研究 *5 </a></p>
-
-<h2>关注的计算机教育期刊和会议</h2>
+<h2 id="sec-6">关注的计算机教育期刊和会议</h2>
 <h3>期刊</h3>
-<p>Computers & Education 教育学1区</p>
+<p>Computers &amp; Education 教育学1区</p>
 <p>ACM Transactions on Computing Education  3区</p>
 <p>IEEE Transactions on Education   2区</p>
 <p>IEEE Transactions on Learning Technologies 3区</p>
@@ -181,17 +241,18 @@ function toggleBibtex(articleid) {
 <h3>会议</h3>
 <p> SIGCSE, ACM Special Interest Group on Computer Science Education Conference</p>
 <p>ICER, ACM Conference on International Computing Education Research</p>
-
-
-<div id="footer">
-<div id="footer-text">
-Page generated 2017-07-10 16:18:50 中国标准时间, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+      </div>
+    </main>
+  </div>
 </div>
-</div>
-</td>
-</tr>
-</table>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 陈翔 · Xiang Chen</p>
+    <p>最近更新：2026 年 10 月</p>
+  </div>
+</footer>
+
+<script src="../assets/site.js"></script>
 </body>
 </html>
-
-

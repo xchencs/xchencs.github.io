@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software Testing Techniques · Xiang Chen</title>
+<meta name="description" content="Undergraduate course: announcements, textbooks, syllabus and projects. Course content is in Chinese.">
+<meta name="author" content="Xiang Chen">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="zh-CN" href="../softwaretesting.html">
+<link rel="alternate" hreflang="en" href="softwaretesting.html">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search).get('theme');
+      var t = (q === 'dark' || q === 'light') ? q :
+        (localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-zh">陈翔</span><span class="brand-en">XIANG CHEN</span></a>
+    <nav class="content-nav" aria-label="Site">
+          <a href="index.html">Home</a>
+          <a href="publications.html">Publications</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="honors.html">Honors</a>
+          <a href="group/index.html">Group</a>
+    </nav>
+    <div class="controls">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <a class="lang-option" href="../softwaretesting.html" hreflang="zh-CN" lang="zh-CN">中文</a>
+        <a class="lang-option active" href="softwaretesting.html" aria-current="true" hreflang="en">EN</a>
+      </div>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <span class="theme-switch-thumb" aria-hidden="true"></span>
+        <button class="theme-option" type="button" data-theme-value="light" aria-pressed="false">Light</button>
+        <button class="theme-option" type="button" data-theme-value="dark" aria-pressed="false">Dark</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="layout">
+    <aside class="sidebar">
+      <img class="portrait" src="../images/cx1.jpg" alt="Xiang Chen" width="108" height="135">
+      <div class="identity">
+        <p class="identity-name">陈翔</p>
+        <p class="latin">XIANG CHEN</p>
+        <p class="role">
+          <span class="role-line">Nantong University</span>
+          <span class="role-line">School of AI and Computer Science</span>
+          <span class="role-line">Associate Professor · Master's Supervisor</span>
+        </p>
+      </div>
+
+      <dl class="metrics">
+        <div><dt>Papers</dt><dd>200+</dd></div>
+        <div><dt>Citations</dt><dd>6797</dd></div>
+        <div><dt>H-Index</dt><dd>44</dd></div>
+      </dl>
+
+      <ul class="side-contact">
+        <li><a href="https://scholar.google.com/citations?hl=en&user=Q2w5lq0AAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 2 8.4l10 4.4 10-4.4L12 4Z"/><path d="M6 10.7V15c0 1.8 2.7 3.2 6 3.2s6-1.4 6-3.2v-4.3"/></svg>Google Scholar</a></li>
+        <li><a href="https://dblp.uni-trier.de/pid/64/3062-5.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 5.4A2.4 2.4 0 0 1 6.9 3H20v15.6H6.9a2.4 2.4 0 0 0-2.4 2.4V5.4Z"/><path d="M8.4 7.2h7.6M8.4 10.6h5"/></svg>DBLP</a></li>
+        <li><a href="mailto:xchencs@ntu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m3.7 7 8.3 6 8.3-6"/></svg>Email</a></li>
+        <li><a href="../images/wx.png"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><path d="M13.8 13.8h2.7v2.7h-2.7zM20.2 13.8v2.5M17 20.2h3.2V17"/></svg>WeChat</a></li>
+        <li><button type="button" class="cv-print" onclick="window.print()"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7.4A2.4 2.4 0 0 0 5 5.4v13.2A2.4 2.4 0 0 0 7.4 21h9.2a2.4 2.4 0 0 0 2.4-2.4V8l-5-5Z"/><path d="M14 3v5h5"/></svg>Print / Save as PDF</button></li>
+      </ul>
+
+      <div class="side-block">
+        <p class="side-title">smartSE Research Group</p>
+        <p class="side-text">Intelligent software engineering, software repository mining, empirical software engineering, software testing and maintenance. <a href="group/index.html">Meet the group →</a></p>
+      </div>
+
+      <div class="side-card">
+        <p class="card-title">Prospective students</p>
+        <p class="card-text">I admit 3–4 master's students each year, working on large language models, deep learning and software engineering. Undergraduates are welcome too.</p>
+        <a class="card-link" href="mailto:xchencs@ntu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m3.7 7 8.3 6 8.3-6"/></svg><span>xchencs@ntu.edu.cn</span></a>
+      </div>
+
+      <div class="side-meta">
+        <span class="meta-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6.6-5.6 6.6-11A6.6 6.6 0 0 0 5.4 10c0 5.4 6.6 11 6.6 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>Nantong <time id="localtime">--:--</time></span>
+        <span class="meta-item">Updated Oct 2026</span>
+      </div>
+    </aside>
+
+    <main id="main" class="content">
+      <h1 class="page-title">Software Testing Techniques</h1>
+      <p class="lede">Undergraduate course: announcements, textbooks, syllabus and projects. Course content is in Chinese.</p>
+      <p class="note">课程材料为中文 · Course materials are in Chinese.</p>
+<h2 id="sec-1">通知</h2>
+<h3>积极参加<a href="http://www.mooctest.org/">全国软件测试大赛</a></h3>
+
+<h3>去爱课程 注册用户  去慕测网 注册用户</h3>
+<h3>主校区QQ群：1027373837    杏林校区QQ群：1002965408</h3>
+<h2 id="sec-2">教材</h2>
+<p>朱少民。<a href="https://item.jd.com/11563286.html">软件测试方法和技术（第3版）。</a>清华大学出版社。 </p>
+<p> 王兴亚 王智钢 赵源 陈振宇 。开发者测试。机械工业出版社。</p> 
+<p>Paul Ammann and Jeff Offutt. <a href="https://item.jd.com/12477814.html?dist=jd">软件测试基础（第2版）。</a>机械工业出版社</p>
+<p>Gordon Fraser等人. Software Testing. 讲义</p>
+<p>相关综述论文</p>
+
+<h2 id="sec-3">慕课</h2>
+<p> 慕课1. 软件测试 陈振宇 南京大学 爱课程链接 [<a href="http://www.icourse163.org/course/NJU-1001773008">Link</a>]
+</p><p> 慕课1a. 软件测试 陈振宇 南京大学  慕测平台链接 [<a href="http://www.mooctest.net">Link</a>] <br/>
+  包括 慕测软件测试基础课程、慕测开发者测试课程、慕测Web应用测试课程、慕测移动应用测试课程
+</p><p> 慕课2. 软件测试 郑炜  西北工业大学 [<a href="http://www.icourse163.org/course/NWPU-1003591005">Link</a>]
+</p><p> 慕课3. 软件测试 贺平 [<a href="http://www.icourses.cn/sCourse/course_3596.html">Link</a>]
+</p><p> 慕课4. 软件测试与质量 武剑洁 华中科技大学 [<a href="http://www.icourse163.org/course/HUST-1001907003">Link</a>]
+</p><h2 id="sec-4">授课内容</h2>
+<p>[第1周] 第一章 绪论 </p> 
+
+<ol>
+<li>软件测试的必要性</li>
+<li>首个bug</li>
+<li>经典事故</li>
+<li>测试的对象：代码、文档、模型</li>
+<li>软件测试的定义</li>
+<li>测试驱动开发的思想</li>
+<li>Devops</li>
+<li>软件测试自动化</li>
+</ol>
+
+<p>[第2周-第3周] 第二章 软件测试的基本理论 <span class="STYLE1">参考</span> 慕课1[01] </p> 
+<ol>
+<li>软件质量模型（McCall模型、ISO 9126模型）</li>
+<li>验证与确认</li>
+<li>错误、缺陷和失效</li>
+<li>RIP模型</li>
+<li>软件测试和软件调试 </li>
+<li>测试用例：测试输入和测试用例Oracle</li>
+<li>测试用例集和测试脚本</li>
+<li>白盒测试和黑盒测试</li>
+<li>静态测试和动态测试</li>
+<li>[高级话题] 测试用例Oracle和蜕变测试 </li>
+</ol>
+<p>[第5周-第7周] 第三章 黑盒测试技术 <span class="STYLE1">参考</span> 慕课1[03]</p> 
+<ol>
+<li>黑盒测试面临的挑战，穷尽测试</li>
+<li>等价类划分</li>
+<li>边界值分析</li>
+<li>判定表方法</li>
+<li>因果图方法</li>
+<li>组合测试方法</li>
+<li>探索性测试方法 <span class="STYLE1">参考</span> 慕课1[04]</li>
+<li>[高级话题] 随机测试（自适应随机测试）方法</li>
+</ol>
+<p>[第9周-第11周]第四章 白盒测试技术 <span class="STYLE1">参考</span> 慕课1[02]</p> 
+
+<ol>
+<li>白盒测试面临的挑战</li>
+<li>语句覆盖准则</li>
+<li>判定覆盖准则</li>
+<li>条件覆盖准则</li>
+<li>判定-条件覆盖准则</li>
+<li>条件组合覆盖准则</li>
+<li>路径覆盖准则</li>
+<li>基于控制流的覆盖准则间的层次关系分析</li>
+<li>基本路径测试方法</li>
+<li>[高级话题] 变异测试</li>
+<li>[高级话题] 基于数据流的覆盖准则</li>
+<li>[高级话题] 测试用例自动生成方法：动态符号执行</li>
+<li>[高级话题] 测试用例自动生成方法：演化测试</li>
+</ol>
+<p>【第13周-第14周]第五章 软件测试流程 <span class="STYLE1">参考</span> 慕课2[第二章] 慕课3[第2讲]</p> 
+<ol>
+<li>单元测试</li>
+<li>集成测试</li>
+<li>系统测试</li>
+<li>验收测试</li>
+<li>[高级话题] 回归测试</li>
+</ol>
+
+<p>[第15周-第16周]软件测试最新进展</p>
+<ol>
+<li>自动软件缺陷定位和修复方法</li>
+<li>软件仓库挖掘：软件缺陷预测</li>
+<li>新型软件制品的测试：APP测试、深度学习系统测试、智能合约测试</li>
+</ol> 
+
+<p>常用测试工具介绍</p>
+<ol>
+<li>慕测平台 [<a href="http://www.mooctest.net/">Link</a>] 建议使用Chrome浏览器登录 </li>
+<li>单元测试工具：JUnit [L<a href="https://junit.org/junit5/">ink]  </a><span class="STYLE1">参考</span> 慕课1[02]</li>
+<li>代码覆盖率搜集工具：Eclemma [<a href="https://www.eclemma.org">Link]</a></li>
+<li>测试用例自动生成工具（基于演化测试）：Evosuite [<a href="http://www.evosuite.org/">Link</a>]</li>
+<li>变异测试工具： Pitest [<a href="http://pitest.org/">Link</a>]</li>
+
+<li>组合测试工具：PICT [<a href="https://github.com/Microsoft/pict">Link</a>]  <span class="STYLE1">参考</span> 慕课1[03] </li>
+<li>捕获重放测试工具：Selenium  <span class="STYLE1">参考</span> 慕课1[03]</li>
+
+</ol> 
+
+
+
+<h2 id="sec-5">实践项目</h2>
+<p>[第4周] 项目1： 单元测试用例设计 <span class="STYLE1">参考</span> 慕课1a 慕测开发者测试课程</p> 
+
+
+<p>[第8周] 项目2： Web应用测试 <span class="STYLE1">参考</span> 慕课1a 慕测Web应用测试课程</p> 
+
+<p>[第12周] 项目3： 移动应用测试 <span class="STYLE1">参考</span> 慕课1a 慕测移动应用测试课程 </p>
+
+<h2 id="sec-6">联系方式</h2>
+<p>办公室：江苏省南通市啬园路9号南通大学方肇周楼606办公室 <br/>
+ 邮箱：xchencs at ntu dot edu dot cn <br/>
+</p>
+      
+    </main>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Xiang Chen</p>
+    <p>Last updated: October 2026</p>
+  </div>
+</footer>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>

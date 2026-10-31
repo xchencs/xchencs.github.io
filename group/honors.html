@@ -1,135 +1,206 @@
-﻿
-﻿
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="stylesheet" href="bibtex.css" type="text/css" />
-<title></title>
-<script type="text/javascript">
-<!--
-// Toggle Display of BibTeX
-function toggleBibtex(articleid) {
-	var bib = document.getElementById('bib_'+articleid);
-	if (bib) {
-		if(bib.className.indexOf('bibtex') != -1) {
-		bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
-		}
-	} else {
-		return;
-	}
-}
--->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>学科竞赛 — 智能软件工程研究组</title>
+<meta name="description" content="课题组关注的创新创业类与程序竞赛类比赛。">
+<meta name="author" content="陈翔 (Xiang Chen)">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search).get('theme');
+      var t = (q === 'dark' || q === 'light') ? q :
+        (localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
 </script>
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td width="165" id="layout-menu">
-<div class="menu-item"><a href="index.html">首页</a></div>
-<div class="menu-item"><a href="member.html">团队成员</a></div>
-<div class="menu-item"><a href="picture.html">课题组相册</a></div>
-<div class="menu-item"><a href="material.html">相关资料</a></div>
-<div class="menu-item"><a href="journal.html">关注的期刊和会议</a></div>
-<div class="menu-item"><a href="honors.html">关注的学科竞赛</a></div>
-<div class="menu-item"><a href="book.html">推荐的教材和慕课</a></div>
-</td>
-<td width="849" id="layout-content">
+<a class="skip-link" href="#main">跳到主要内容</a>
 
-<h2>创新创业类比赛</h2>
-<p>1 中国互联网+大学生创新创业比赛 </p>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="../index.html"><span class="brand-zh">陈翔</span><span class="brand-en">XIANG CHEN</span></a>
+    <nav class="content-nav" aria-label="站点导航">
+          <a href="../index.html">首页</a>
+          <a href="../publications.html">论文</a>
+          <a href="../teaching.html">教学</a>
+          <a href="../honors.html">荣誉</a>
+          <a href="../group/index.html" class="active">课题组</a>
+    </nav>
+    <div class="controls">
+      <div class="lang-switch" role="group" aria-label="语言 / Language">
+        <a class="lang-option active" href="honors.html" aria-current="true" hreflang="zh-CN">中文</a>
+        <a class="lang-option" href="../en/group/honors.html" hreflang="en" lang="en">EN</a>
+      </div>
+      <div class="theme-switch" role="group" aria-label="主题">
+        <span class="theme-switch-thumb" aria-hidden="true"></span>
+        <button class="theme-option" type="button" data-theme-value="light" aria-pressed="false">Light</button>
+        <button class="theme-option" type="button" data-theme-value="dark" aria-pressed="false">Dark</button>
+      </div>
+    </div>
+  </div>
+</header>
 
-<p>2 挑战杯全国大学生课外学术科技作品竞赛 <br>
-2021 黑科技国三</p>
+<div class="container">
+  <div class="layout">
+    <aside class="sidebar">
+        <img class="portrait" src="../images/cx1.jpg" alt="陈翔" width="108" height="135">
+        <div class="identity">
+          <p class="identity-name">陈翔</p>
+          <p class="latin">XIANG CHEN</p>
+          <p class="role">
+            <span class="role-line">南通大学 · 人工智能与计算机学院</span>
+            <span class="role-line">副教授 · 硕士生导师</span>
+          </p>
+        </div>
 
-<p>3 挑战杯中国大学生创业计划大赛 </p>
+        <dl class="metrics">
+          <div><dt>论文</dt><dd>200+</dd></div>
+          <div><dt>引用</dt><dd>6797</dd></div>
+          <div><dt>H-Index</dt><dd>44</dd></div>
+        </dl>
 
-<p>21 <a href="https://www.robomaster.com/zh-CN">全国大学生机器人大赛-RoboMaster、RoboCon</a> <br>
-2022 国二*1</p>
+        <ul class="side-contact">
+          <li><a href="https://scholar.google.com/citations?hl=en&user=Q2w5lq0AAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 2 8.4l10 4.4 10-4.4L12 4Z"/><path d="M6 10.7V15c0 1.8 2.7 3.2 6 3.2s6-1.4 6-3.2v-4.3"/></svg>Google Scholar</a></li>
+          <li><a href="https://dblp.uni-trier.de/pid/64/3062-5.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 5.4A2.4 2.4 0 0 1 6.9 3H20v15.6H6.9a2.4 2.4 0 0 0-2.4 2.4V5.4Z"/><path d="M8.4 7.2h7.6M8.4 10.6h5"/></svg>DBLP</a></li>
+          <li><a href="mailto:xchencs@ntu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m3.7 7 8.3 6 8.3-6"/></svg>Email</a></li>
+          <li><a href="../images/wx.png"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><path d="M13.8 13.8h2.7v2.7h-2.7zM20.2 13.8v2.5M17 20.2h3.2V17"/></svg>微信公众号</a></li>
+          <li><button type="button" class="cv-print" onclick="window.print()"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7.4A2.4 2.4 0 0 0 5 5.4v13.2A2.4 2.4 0 0 0 7.4 21h9.2a2.4 2.4 0 0 0 2.4-2.4V8l-5-5Z"/><path d="M14 3v5h5"/></svg>打印 / 存为 PDF</button></li>
+        </ul>
 
-<p>25 <a href="http://jsjds.ruc.edu.cn/">中国大学生计算机设计大赛 </a> <br>
-2024 国二*1 国三*1 2023 国二*2 2022 国三*1 2021 国二*1 2020 国三*1 2019 国三*1 2018 国二*2 2017 国一*1 国三*2 2015 国三*1
-</p>
+        <div class="side-block">
+          <p class="side-title">智能软件工程研究组</p>
+          <p class="side-text">隶属南通大学人工智能与计算机学院，研究智能软件工程、软件仓库挖掘、软件测试与维护。<a href="../group/index.html">了解课题组 →</a></p>
+        </div>
 
-<p>27 <a href="http://www.fwwb.org.cn/">中国大学生服务外包创新创业大赛 </a> <br>
-2024 国三*2 2023 国二*1 国三*1 2022 国三*2 2021 国二*1 2019 国二*2 国三*2 2018 国二*3 国三*2 2017 国二*1 国三*1 2016 国二*1 2015 国二*1 2014 国二*1 2012 国三*1
-</p>
+        <div class="side-card">
+          <p class="card-title">招收硕士研究生</p>
+          <p class="card-text">每年 3–4 人，方向包括大语言模型、深度学习与软件工程。也欢迎本科生参与科研与竞赛。</p>
+          <a class="card-link" href="mailto:xchencs@ntu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m3.7 7 8.3 6 8.3-6"/></svg><span>xchencs@ntu.edu.cn</span></a>
+        </div>
 
-<p>29 <a href="http://www.c4best.cn/">中国高校计算机大赛</a>：大数据挑战赛、团体程序设计天梯赛、移动应用创新赛、网络技术挑战赛、人工智能创意赛 
-<br>团体程序设计天梯赛 2025 国二*1 2024 国二*1 2023 国二*1 2022 国二*1 2021 国三*1
-<br>网络技术挑战赛 2022 国一*1 国二*1 
-</p>
+        <div class="side-meta">
+          <span class="meta-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6.6-5.6 6.6-11A6.6 6.6 0 0 0 5.4 10c0 5.4 6.6 11 6.6 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>南通 <time id="localtime">--:--</time></span>
+          <span class="meta-item">更新于 2026 年 10 月</span>
+        </div>
+    </aside>
+
+    <main id="main" class="content">
+      <h1 class="page-title">关注的学科竞赛</h1>
+      <p class="lede">课题组组织参加的创新创业类与程序竞赛类比赛。</p>
+      <nav class="content-nav sub" id="group-nav" aria-label="课题组">
+          <a href="index.html">简介</a>
+          <a href="member.html">团队</a>
+          <a href="picture.html">相册</a>
+          <a href="material.html">资料</a>
+          <a href="journal.html">期刊会议</a>
+          <a href="honors.html" class="active">竞赛</a>
+          <a href="book.html">教材</a>
+      </nav>
+
+<div class="prose">
+<h2 id="sec-1">创新创业类比赛</h2>&#13;
+<p>1 中国互联网+大学生创新创业比赛 </p>&#13;
+&#13;
+<p>2 挑战杯全国大学生课外学术科技作品竞赛 <br/>&#13;
+2021 黑科技国三</p>&#13;
+&#13;
+<p>3 挑战杯中国大学生创业计划大赛 </p>&#13;
+&#13;
+<p>21 <a href="https://www.robomaster.com/zh-CN">全国大学生机器人大赛-RoboMaster、RoboCon</a> <br/>&#13;
+2022 国二*1</p>&#13;
+&#13;
+<p>25 <a href="http://jsjds.ruc.edu.cn/">中国大学生计算机设计大赛 </a> <br/>&#13;
+2024 国二*1 国三*1 2023 国二*2 2022 国三*1 2021 国二*1 2020 国三*1 2019 国三*1 2018 国二*2 2017 国一*1 国三*2 2015 国三*1&#13;
+</p>&#13;
+&#13;
+<p>27 <a href="http://www.fwwb.org.cn/">中国大学生服务外包创新创业大赛 </a> <br/>&#13;
+2024 国三*2 2023 国二*1 国三*1 2022 国三*2 2021 国二*1 2019 国二*2 国三*2 2018 国二*3 国三*2 2017 国二*1 国三*1 2016 国二*1 2015 国二*1 2014 国二*1 2012 国三*1&#13;
+</p>&#13;
+&#13;
+<p>29 <a href="http://www.c4best.cn/">中国高校计算机大赛</a>：大数据挑战赛、团体程序设计天梯赛、移动应用创新赛、网络技术挑战赛、人工智能创意赛 &#13;
+<br/>团体程序设计天梯赛 2025 国二*1 2024 国二*1 2023 国二*1 2022 国二*1 2021 国三*1&#13;
+<br/>网络技术挑战赛 2022 国一*1 国二*1 &#13;
+</p>&#13;
+&#13;
+&#13;
+<p>32 <a href="http://crc.drct-caa.org.cn/index.php/race/view?id=663">中国机器人大赛暨RoboCup机器人世界杯中国赛</a></p>&#13;
+&#13;
+<p>33 <a href="http://ftp.ciscn.cn/home">全国大学生信息安全竞赛</a></p>&#13;
+&#13;
+<p>38 <a href="http://www.cnsoftbei.com/">中国软件杯大学生软件设计大赛</a> </p>&#13;
+&#13;
+<p>42 华为ICT大赛 </p>&#13;
+&#13;
+<p>45 中国机器人及人工智能大赛  </p>&#13;
+&#13;
+<p>睿抗机器人开发者大赛CAIP编程设计赛道（本科组）&#13;
+<br/>2024 国一*4 国二*3 国三*1&#13;
+</p>&#13;
+&#13;
+<p> <a href="https://cpipc.acge.org.cn/&gt;中国研究生比赛系列&lt;/a&gt;
+&lt;br&gt; 人工智能创新大赛 2023 国二*1 国三*1 2022 国二*1
+&lt;br&gt; 智慧城市技术与创意设计大赛 2023 国二*1
+&lt;br&gt;数学建模竞赛  2023 国二*1 国三*1 2022 国三*2 2021 国一*1 国二*1 2020 国二*1
+&lt;/p&gt;
+
+&lt;h2&gt;程序竞赛类比赛&lt;/h2&gt;
+
+&lt;p&gt;4 ACM-ICPC国际大学生程序设计竞赛
+&lt;br&gt; 2023 银牌*1 铜牌*1 2022 EC Final 银牌*1 2021 银牌*1 铜牌*1 2020 铜牌*2 2019 铜牌*1 2017 铜牌*3
+
+&lt;/p&gt;
 
 
-<p>32 <a href="http://crc.drct-caa.org.cn/index.php/race/view?id=663">中国机器人大赛暨RoboCup机器人世界杯中国赛</a></p>
-
-<p>33 <a href="http://ftp.ciscn.cn/home">全国大学生信息安全竞赛</a></p>
-
-<p>38 <a href="http://www.cnsoftbei.com/">中国软件杯大学生软件设计大赛</a> </p>
-
-<p>42 华为ICT大赛 </p>
-
-<p>45 中国机器人及人工智能大赛  </p>
-
-<p>睿抗机器人开发者大赛CAIP编程设计赛道（本科组）
-<br>2024 国一*4 国二*3 国三*1
-</p>
-
-<p> <a href="https://cpipc.acge.org.cn/>中国研究生比赛系列</a>
-<br> 人工智能创新大赛 2023 国二*1 国三*1 2022 国二*1
-<br> 智慧城市技术与创意设计大赛 2023 国二*1
-<br>数学建模竞赛  2023 国二*1 国三*1 2022 国三*2 2021 国一*1 国二*1 2020 国二*1
-</p>
-
-<h2>程序竞赛类比赛</h2>
-
-<p>4 ACM-ICPC国际大学生程序设计竞赛
-<br> 2023 银牌*1 铜牌*1 2022 EC Final 银牌*1 2021 银牌*1 铜牌*1 2020 铜牌*2 2019 铜牌*1 2017 铜牌*3
-
-</p>
-
-
-<p>36 <a href="https://dasai.lanqiao.cn/">蓝桥杯全国软件和信息技术专业人才大赛 </a>
-<br>2024 国二*4 2023 国一*1 2022 国一*3 2021 国一*2 2018 国一*1 2016 国一*1
-</p>
-
-<p>58 <a href="https://astar.n.shifen.com/"> 百度之星· 程序设计大赛 </a></p>
-
-<p>63 全国大学生计算机系统能力大赛 </p>
-
-<p>65 全国大学生物联网设计竞赛 </p>
-
-<p>66 全国大学生信息安全与对抗技术竞赛 </p>
-
-<p>76 全球校园人工智能算法精英大赛 </p>
-
-<p>其他：</p>
-<p>CCPC 中国大学生程序设计竞赛 
-<br>区域赛 2023 铜牌*1 2021 银奖*1 
-<br>女生赛 2023 铜牌*1 2022 银奖*1 2021 铜奖*1</p>
-
-<p>江苏省大学生程序设计  </p>
-
-<p>全国软件测试大赛  
-<br>2017 国二*1 2016 国三*4</p>
-<p>创青春 </p>
-<p>发现杯 <br>
-2021 国三*1 2019 国三*1</p>
-
-<p>全国高校云计算应用创新大赛  <br>
-2018 国二*1</p>
-<div id="footer">
-<div id="footer-text">
-Page generated 2017-07-10 16:18:50 中国标准时间, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+&lt;p&gt;36 &lt;a href=" https:="">蓝桥杯全国软件和信息技术专业人才大赛 </a>&#13;
+<br/>2024 国二*4 2023 国一*1 2022 国一*3 2021 国一*2 2018 国一*1 2016 国一*1&#13;
+</p>&#13;
+&#13;
+<p>58 <a href="https://astar.n.shifen.com/"> 百度之星· 程序设计大赛 </a></p>&#13;
+&#13;
+<p>63 全国大学生计算机系统能力大赛 </p>&#13;
+&#13;
+<p>65 全国大学生物联网设计竞赛 </p>&#13;
+&#13;
+<p>66 全国大学生信息安全与对抗技术竞赛 </p>&#13;
+&#13;
+<p>76 全球校园人工智能算法精英大赛 </p>&#13;
+&#13;
+<p>其他：</p>&#13;
+<p>CCPC 中国大学生程序设计竞赛 &#13;
+<br/>区域赛 2023 铜牌*1 2021 银奖*1 &#13;
+<br/>女生赛 2023 铜牌*1 2022 银奖*1 2021 铜奖*1</p>&#13;
+&#13;
+<p>江苏省大学生程序设计  </p>&#13;
+&#13;
+<p>全国软件测试大赛  &#13;
+<br/>2017 国二*1 2016 国三*4</p>&#13;
+<p>创青春 </p>&#13;
+<p>发现杯 <br/>&#13;
+2021 国三*1 2019 国三*1</p>&#13;
+&#13;
+<p>全国高校云计算应用创新大赛  <br/>&#13;
+2018 国二*1</p>&#13;
+&#13;
+      </div>
+    </main>
+  </div>
 </div>
-</div>
-</td>
-</tr>
-</table>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 陈翔 · Xiang Chen</p>
+    <p>最近更新：2026 年 10 月</p>
+  </div>
+</footer>
+
+<script src="../assets/site.js"></script>
 </body>
 </html>
-
-

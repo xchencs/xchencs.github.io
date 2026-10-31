@@ -1,455 +1,315 @@
-﻿
-﻿
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118637126-1"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>陈翔 · Xiang Chen — 南通大学 智能软件工程</title>
+<meta name="description" content="陈翔，南通大学人工智能与计算机学院副教授、硕士生导师，研究智能软件工程、软件漏洞检测与修复、软件测试与代码大模型。">
+<meta name="author" content="陈翔 (Xiang Chen)">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-118637126-1');
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search).get('theme');
+      var t = (q === 'dark' || q === 'light') ? q :
+        (localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
 </script>
-
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="stylesheet" href="bibtex.css" type="text/css" />
-<title>NTU SE Research Group</title>
-<script type="text/javascript">
-<!--
-// Toggle Display of BibTeX
-function toggleBibtex(articleid) {
-	var bib = document.getElementById('bib_'+articleid);
-	if (bib) {
-		if(bib.className.indexOf('bibtex') != -1) {
-		bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
-		}
-	} else {
-		return;
-	}
-}
--->
-</script>
-<style type="text/css">
-<!--
-.STYLE1 {color: #FF0000}
--->
-</style>
 </head>
 <body>
-<table width="1200" style="table-layout:fixed  summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-item"><a href="index.html">Homepage</a></div>
-<div class="menu-item"><a href="teaching.html">Teaching</a></div>
-<div class="menu-item"><a href="publications.html">Publications</a></div>
-<div class="menu-item"><a href="honors.html">Honors</a></div>
-<div class="menu-item"><a href="group/index.html">Research Group</a></div>
-</td>
-<td id="layout-content">
-<p><br /></p>
-<table class="imgtable"><tr>
-<td>
-<img src="images/cx.jpg" alt="" width="400px" height="280px" />&nbsp;
-</td>
-
-<td align="left"><h1>Xiang Chen（陈翔） <br />
-</h1>
-<p>Associate Professor, Master Supervisor<br />
-Department of Software Engineering<br>
-<a href="https://ai.ntu.edu.cn/">School of Artificial Intelligence and Computer Science</a> <br />
-<a href="https://www.ntu.edu.cn/">Nantong University</a> <br /> 
-Email: xchencs at ntu dot edu dot cn
-<br>
-<br>
-<span class="STYLE1">欢迎大家关注我们课题组的微信公众号</span><br><br>
-
-<img src="images/wx.png" alt="" width="400px" height="140px" />&nbsp;</p>
-</td></tr></table>
-<h2>About Me</h2>
-<p>I received the B.Sc. degree in <a href="http://som.xjtu.edu.cn/">the School of Management</a> from <a href="http://www.xjtu.edu.cn/">Xi’an Jiaotong University </a>（西安交通大学）, China, in 2002. </p>
-
-<p>Then I received the M.Sc. and Ph.D. degrees in <a href="http://cs.nju.edu.cn/">the Department of Computer Science and Technology</a> from <a href="http://www.nju.edu.cn/">Nanjing University</a>（南京大学）, China, in 2008 and 2011, respectively.  My advisor is Professor <a href="https://cs.nju.edu.cn/58/29/c2639a153641/page.htm">Daoxu Chen （陈道蓄） </a> and Professor <a href="https://isetnju.github.io/guq/index.html">Qing Gu （顾庆）</a>. </p> 
-
-<p>Now I am an associate professor in the School of Artificial Intelligence and Computer Science at <a href="http://www.ntu.edu.cn">Nantong University</a>.</p>
-
-<p>I am a member of ACM, IEEE and senior member of <a href="http://www.ccf.org.cn/">CCF (China Computer Federation)</a>.
-<p>中国计算机协会——<a href="https://www.ccf.org.cn/Chapters/TC/TC_Listing/TCSS/">系统软件专委会执行委员</a>（2019—）</p>
-<p>中国计算机协会——<a href="https://www.ccf.org.cn/Chapters/TC/TC_Listing/TCSE/">软件工程专委会执行委员</a>（2020—）</p>
-
-
-<h2>Visiting Scholar</h2>
-<ol>
-<li><p><a href="http://www.ntu.edu.sg/Pages/home.aspx">Nanyang Technological University</a>, Cyber Security Lab, Singapore, 2018-2019. Visiting Professor <a href="http://www.ntu.edu.sg/home/yangliu/">Yang Liu</a> （江苏省政府留学金资助） </p></li>
-<li><p><a href="http://www.uzh.ch/en.html">University of Zurich</a>, Software Evolution and Architecture Lab, Switzerland, 2009. Visiting Professor <a href="http://www.ifi.uzh.ch/en/seal/people/gall.html">Harald C. Gall</a>（南京大学资助）</p></li>
-</ol>
-
-
-<h2>Call for Papers</h2>
-<ul>
-<li><p>软件工程方向（TSE、TOSEM、ICSE、FSE、ISSTA、ASE）</p></li>
-<li><p>网络与信息安全方向（TDSC、TIFS、CCS、S&P、USENIX Security和NDSS）</p></li>
-<li><p>人机交互方向（CHI、UIST）</p></li>
-</ul>
-
-
-
-<h2>Service</h2>
-<ul>
-
-<li>
-  <p><a href="https://www.journals.elsevier.com/information-and-software-technology">Information and Software Technology</a> (CCF B)  （Editorial Board Member 2022 - ）
-<br>Please submit your high-quality papers to IST! 
-<br>IST's impact factor is 4.3 in 2026 and <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_softwaresystems">is ranked at 5th among all software engineering journals and conferences at the Google Scholar Metrics</a></p>
-</li>
-</ul>
-
-<h2>Research Interests </h2>
-<p>My research interests include AI4SE, software analytics, software testing, software maintenance, empirical software engineering, mining software repository:  </p>
-<ul>
-
-<li>
-  <p>Security Vulnerability Understanding, Detection, and Repair </p>
-</li>
-
-<li>
-  <p>Competitive Program Generation </p>
-</li>
-
-<li>
-  <p>Test Case Generation </p>
-</li>
-
-<li>
-  <p>Code Language Model Security </p>
-</li>
-
-<li>
-  <p>LLMs for Software Engineering (LLM4SE) <a href="https://github.com/gai4se/LLM4SE">（Literautre Repository By SMU）</a>  <a href="https://github.com/iSEngLab/AwesomeLLM4SE">（Literautre Repository by NJU）</a> </p>
-</li>
-
-
-
-<li>
-<p> Code Change Representation and Downstream Tasks (Just-in-time Defect Prediction, Commit Message Generation, Just-in-time Vulnerability Detection)</p>
-</li>
-
-<li>
-  <p>Mining Software Repository (Software Defect Prediction, Stack Overflow Mining, Source Code Summarization, Code /API Search)</p>
-</li>
-
-<li>
-  <p>Software Fault Localization and Automatic Program Repair  <a href="http://program-repair.org/bibliography.html">（Literautre Repository）</a> </p>
-</li>
-<li>
-  <p>Regression Testing (Test Case Selection, Test Suite Augmentation, Test Case Prioritization, Test Case Reduction)</p>
-</li>
-
-<li>
-  <p>Combinatorial Testing（<a href="http://gist.nju.edu.cn/ct_repository/">Literature Repository</a>） </p>
-</li>
-
-</ul>
-<p>More research information can be found by visiting our <a href="group/index.html"><b>smartSE</b></a> group （智能软件工程研究组）.</p>
-
-<h2>Open Positions</h2>
-<p>I am recruiting well motivated and dedicated master students to do research in above-mentioned areas. <p>Undergraduate students are also encouraged to contact me to work on related topics.
-
-<p>我现在招收智能科学与技术（学硕）、计算机技术（专硕）、人工智能（专硕）的硕士生（每年3-4人），欢迎对大语言模型、深度学习、自然语言处理、软件工程方向感兴趣的同学联系我：</p>
-<p> 联系邮箱：<span class="STYLE1">xchencs at ntu dot edu dot cn</span>。</p>
-<p>也欢迎学有余力的一流本科生加入我的课题组参加：</p>
-<p>1 算法类比赛 </p>
-<p>2 创新创业类比赛 </p>
-<p>3 基于大语言模型的软件工程方面的科研 </p>
-<p>希望学生：</p>
-<p>1、踏实刻苦，具有自我驱动的能力。</p>
-<p>2、较强的自学能力。</p>
-<p>3、较强的编程能力。</p>
-<p>过去指导学生的成果可参考<a href="honors.html">链接</a>。</p>
-<p>过去指导学生的毕业去向可参考<a href="group/member.html">链接</a>。</p>
-
-<h2>Research Projects</h2>
-<ul>
-<li><p>The Natural Science Foundation of China (61202006)</p>
-</li>
-<li><p>The University Natural Science Research Project of Jiangsu Province (BK2012023)
-</p></li>
-
-<li>
-  <p>The Nantong Application Research Plan (JC2021124，JC2019106，JC2018134, 12KJB520014)</p>
-</li>
-
-<li>
-  <p>The Open Project of State Key Laboratory for Novel Software Technology at Nanjing University (KFKT2024B21，B21KFKT2019B14，KFKT2016B18，KFKT2012B29) </p>
-</li>
-
-<li>
-  <p>The Open Project of State Key Laboratory of Information Security at Institute of Information Engineering, Chinese Academy of Sciences (2020-MS-07)</li>
-<li> <p>The Open Project of Guangxi Key Laboratory of Trusted Software (kx202012，kx201610)</p> 
-</li>
-
-
-<li>
-  <p>The Open Project of Key Laboratory of Safety-Critical Software for Nanjing University of Aeronautics and Astronautics, Ministry of Industry and Information Technology  (NJ2020022)</li>
-</ul>
-
-
-<h2>Journal Reviewers </h2>
-<ul>
-<li>
-  <p><a href="https://dl.acm.org/journal/csur">ACM Computing Surveys </a>（CCF A） </p>
-</li>
-<li>
-  <p><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32">IEEE Transactions on Software Engineering</a> （CCF A） </p>
-</li>
-<li>
-  <p><a href="https://dl.acm.org/journal/tosem">ACM Transactions on Software Engineering and Methodology </a>(CCF A)</li>
-<li>
-  <p><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858">IEEE Transactions on Dependable and Secure Computing</a> (CCF A) </li>
-
-<li>
-  <p><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2">IEEE Computer</a> (CCF A) </li>
-<li>
-
-  <p><a href="https://www.springer.com/journal/10664">Empirical Software Engineering</a> (CCF B)</li>
-
-<li>
-  <p><a href="https://www.journals.elsevier.com/information-and-software-technology">Information and Software Technology</a> (CCF B) </p>
-</li>
-
-	<li>
-  <p><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24">IEEE Transactions on Reliability</a> </p>
-	</li>
-	<li>
-  <p><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6687317">IEEE Transactions on Big Data</a> </p>
-	</li>
-
-    <li><p><a href="https://dl.acm.org/journal/tist">ACM Transactions on Intelligent Systems and Technology</a></li>
-    <li>
-  <p><a href="https://www.journals.elsevier.com/journal-of-systems-and-software">Journal of Systems and Software</a> (CCF B) </p>
-</li>
-
-
-	<li>
-  <p>	<a href="https://www.springer.com/computer/journal/11390">Journal of Computer Science and Technology</a> (CCF B) </p>
-	</li>
-	<li>
-	  <p><a href="https://www.springer.com/computer/information+systems+and+applications/journal/11432"> Science China: Information Sciences</a> (CCF B) </p>	
-	</li>
-	<li>
-	  <p><a href="https://www.springer.com/journal/10515">Automated Software Engineering</a> (CCF B) </p>
-	</li>
-
-	<li>
-	  <p><a href="https://onlinelibrary.wiley.com/journal/10991689">Software Testing, Verification and Reliability</a> (CCF B) </p>
-	</li>
-
-    <li>
-      <p><a href="https://onlinelibrary.wiley.com/journal/20477481">Journal of Software: Evolution and Process</a> (CCF B) </p>
-    </li>
-	<li><p><a href="https://onlinelibrary.wiley.com/journal/1097024x">Software: Practice and Experience</a> (CCF B)</li>
-	<li>
-	  <p><a href="https://academic.oup.com/comjnl">The Computer Journal</a> (CCF B) </p>
-	</li>
-    <li>
-      <p><a href="https://www.journals.elsevier.com/pattern-recognition">Pattern Recognition</a> (CCF B)    </li>
-    <li>
-      <p><a href="https://ietresearch.onlinelibrary.wiley.com/journal/17518814">IET Software</a> (CCF B)     </li>
-
-    <li>
-      <p><a href="https://www.sciencedirect.com/journal/computers-and-security">Computers & Security</a> (CCF B)     </li>
-
-    <li>
-      <p><a href="https://www.springer.com/journal/11219">Software Quality Journal</a> (CCF C)    </li>
-    <li>
-      <p><a href="https://www.springer.com/journal/11704">Frontiers of Computer Science</a> (CCF C) </p>
-    </li>
-
-    <li>
-      <p><a href="https://onlinelibrary.wiley.com/journal/15320634">Concurrency and Computation: Practice and Experience  </a> (CCF C)</p>
-    </li>
-
-    <li>
-      <p><a href="https://www.journals.elsevier.com/expert-systems-with-applications/">Expert Systems With Applications  </a> (CCF C)</p>
-    </li>
-	<li><p><a href="https://www.journals.elsevier.com/knowledge-based-systems">Knowledge-based Systems</a> (CCF C)</li>
-	<li><p><a href="https://www.journals.elsevier.com/applied-soft-computing">Applied Soft Computing</a> (CCF C)</li>
-	
-		<li><p><a href="https://www.journals.elsevier.com/neurocomputing">Neurocomputing</a> (CCF C)</li>
-		<li>
-	  <p><a href="https://onlinelibrary.wiley.com/journal/14678640">Computational Intelligence</a> (CCF C)	</li>
-        <li>
-        <p><a href="https://www.hindawi.com/journals/scn/">Security and Communication Networks</a> （CCF C）        </li>
-         <li>
-         <p><a href="https://www.journals.elsevier.com/journal-of-network-and-computer-applications">Journal of Network and Computer Applications</a> (CCF C)         </li>
-         <li>
-      <p><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639">IEEE Access </a>（Associate Editor 2019 - 2022） </p>
-    </li>
-		<li><p><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9670">IEEE Intelligent Systems</a></li>
-        <li>
-        <p><a href="https://www.journals.elsevier.com/reliability-engineering-and-system-safety">Reliability Engineering & System Safety</a>        </li>
-        <li>
-  <p><a href="https://www.journals.elsevier.com/computer-methods-and-programs-in-biomedicine">Computer Methods and Programs in Biomedicine </a></p>
-    </li>
-
-    <li>
-      <p><a href="https://www.hindawi.com/journals/sp/">Scientific Programming</a></li>
-	
-	<li>
-	  <p><a href="https://onlinelibrary.wiley.com/journal/14680394">Expert Systems </a></li>
-	
-	<li>
-	  <p><a href="https://www.springer.com/engineering/computational+intelligence+and+complexity/journal/12065">Evolutionary Intelligence</a></li>
-	
-    <li><p><a href="https://www.journals.elsevier.com/swarm-and-evolutionary-computation">Swarm and Evolutionary Computation</a></li>
-    <li>
-      <p><a href="https://www.worldscientific.com/worldscinet/jcsc">Journal of Circuits, Systems, and Computers</a></p>
-    </li>
-    <li><p><a href="https://www.hindawi.com/journals/complexity/">Complexity</a></p>
-    </li>
-  <li>
-      <p><a href="https://cybersecurity.springeropen.com/">Cybersecurity</a></li>
-    
-
-    <li>
-      <p><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907">IEEE Internet of Things Journal
-</a></li>
-
-    <li>
-      <p><a href="http://tst.tsinghuajournals.com/EN/1007-0214/home.shtml"> Tsinghua Science and Technology
-</a></li>
-    <li>
-      <p><a href="https://www.springer.com/journal/13369">Arabian Journal for Science and Engineering</a></li>
-    <li><p><a href="https://www.journals.elsevier.com/computers-and-electrical-engineering">Computers & Electrical Engineering</a></p>
-    </li>
-    <li><p><a href="https://dl.acm.org/journal/health">ACM Transactions on Computing for Healthcare</a></p>
-    </li>
-    <li><p><a href="http://scis.scichina.com/">中国科学：信息科学</a> （一级学报）</li>
-    <li>
-        <p><a href="http://cjc.ict.ac.cn/">计算机学报  </a> （一级学报）</p>
-    </li>
-    <li>
-  <p><a href="http://www.jos.org.cn/jos/ch/index.aspx">软件学报</a> （一级学报）</p>
-</li>
-<li><p><a href="http://www.aas.net.cn/">自动化学报</a>（一级学报）</li>
-<li>
-  <p><a href="http://fcst.ceaj.org/CN/volumn/home.shtml">计算机科学与探索</a> </p>
-</li>
-<li>
-  <p><a href="http://www.jsjkx.com/jsjkx/ch/index.aspx">计算机科学</a></li>
-<li>
-  <p><a href="http://cea.ceaj.org/CN/volumn/home.shtml">计算机工程与应用</a></li>
-<li>
-  <p><a href="http://www.joca.cn/CN/volumn/home.shtml">计算机应用</a></li>
-<li>
-  <p><a href="http://www.arocmag.com/">计算机应用研究 </a></li>
-<li><p>《南京理工大学学报》（自然科学版）</p></li>
-<li><p>《西北师范大学学报》（自然科学版）</p></li>
-<li><p>《江苏科技大学学报》（自然科学版）</p>
-</ul>
-
-<h2>Conference PC Member: </h2>
-<ul>
-
-
-<li>
-<p><a href="https://conf.researchr.org/home/internetware-2026">Internetware 2026 (CCF C)</a>
-</li>
-
-<li>
-<p><a href="https://qrs26.techconf.org/">QRS 2026 (CCF C)</a>
-</li>
-
-<li>
-<p><a href="https://ccf.org.cn/ICSS2026">ICSS 2026(CCF C)</a>
-</li>
-
-<li>
-<p><a href="https://conf.researchr.org/track/fse-2026/fse-2026-research-papers">FSE 2026 (CCF A)</a>
-</li>
-
-<li>
-<p><a href="https://conf.researchr.org/home/internetware-2025">Internetware 2025</a>
-</li>
-
-<li>
-<p><a href="https://iceccs2025-hangzhou.github.io/">ICECCS 2025</a>
-</li>
-
-
-<li>
-<p><a href="https://ieeecompsac.computer.org/2025/">COMPSAC 2025</a>
-
-</li>
-
-<li>
-<p>Internetware 2024
-</li>
-<li>
-<p>SEKE 2024
-</li>
-<li>
-<p>2023年中国软件大会（面向复杂软件的缺陷检测与修复技术专刊）
-</li>
-<li>
-<p>SEKE 2023
-</li>
-<li>
-<p>2022年全国软件年会（人工智能安全论坛）
-</li>
-<li>
-<p>DSA 2022
-</li>
-<li>
-<p>SEKE 2022
-</li>
-<li>
-<p><a href="https://dsa21.techconf.org/committee/program">DSA 2021</a>
-</li>
-<li>
-<p>SEKE 2021
-</li>
-<li>
-<p>APSEC 2020
-</li>
-<li>
-<p>NASAC 2020
-</li>
-
-<li>
-  <p>External Reviewer: TASE 2020，ASE 2019，TASE 2019，COMPSAC 2019，COMPSAC 2018， SATE 2018，SAC 2017</li>
-</ul>
-
-
-<h2>Contacts</h2>
-<p>地址： 江苏省南通市啬园路9号南通大学34号楼1406办公室 <br />
- 邮编： 226019 <br />
-</p>
-
-
-<div id="footer-text">
-Page generated 2017-07-10 16:18:50 中国标准时间, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.</div>
-
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-zh">陈翔</span><span class="brand-en">XIANG CHEN</span></a>
+    <nav class="content-nav" aria-label="站点导航">
+          <a href="index.html" class="active">首页</a>
+          <a href="publications.html">论文</a>
+          <a href="teaching.html">教学</a>
+          <a href="honors.html">荣誉</a>
+          <a href="group/index.html">课题组</a>
+    </nav>
+    <div class="controls">
+      <div class="lang-switch" role="group" aria-label="语言 / Language">
+        <a class="lang-option active" href="index.html" aria-current="true" hreflang="zh-CN">中文</a>
+        <a class="lang-option" href="en/index.html" hreflang="en" lang="en">EN</a>
+      </div>
+      <div class="theme-switch" role="group" aria-label="主题">
+        <span class="theme-switch-thumb" aria-hidden="true"></span>
+        <button class="theme-option" type="button" data-theme-value="light" aria-pressed="false">Light</button>
+        <button class="theme-option" type="button" data-theme-value="dark" aria-pressed="false">Dark</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="layout">
+    <aside class="sidebar">
+        <img class="portrait" src="images/cx1.jpg" alt="陈翔" width="108" height="135">
+        <div class="identity">
+          <p class="identity-name">陈翔</p>
+          <p class="latin">XIANG CHEN</p>
+          <p class="role">
+            <span class="role-line">南通大学 · 人工智能与计算机学院</span>
+            <span class="role-line">副教授 · 硕士生导师</span>
+          </p>
+        </div>
+
+        <dl class="metrics">
+          <div><dt>论文</dt><dd>200+</dd></div>
+          <div><dt>引用</dt><dd>6797</dd></div>
+          <div><dt>H-Index</dt><dd>44</dd></div>
+        </dl>
+
+        <ul class="side-contact">
+          <li><a href="https://scholar.google.com/citations?hl=en&user=Q2w5lq0AAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 2 8.4l10 4.4 10-4.4L12 4Z"/><path d="M6 10.7V15c0 1.8 2.7 3.2 6 3.2s6-1.4 6-3.2v-4.3"/></svg>Google Scholar</a></li>
+          <li><a href="https://dblp.uni-trier.de/pid/64/3062-5.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 5.4A2.4 2.4 0 0 1 6.9 3H20v15.6H6.9a2.4 2.4 0 0 0-2.4 2.4V5.4Z"/><path d="M8.4 7.2h7.6M8.4 10.6h5"/></svg>DBLP</a></li>
+          <li><a href="mailto:xchencs@ntu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m3.7 7 8.3 6 8.3-6"/></svg>Email</a></li>
+          <li><a href="images/wx.png"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><path d="M13.8 13.8h2.7v2.7h-2.7zM20.2 13.8v2.5M17 20.2h3.2V17"/></svg>微信公众号</a></li>
+          <li><button type="button" class="cv-print" onclick="window.print()"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7.4A2.4 2.4 0 0 0 5 5.4v13.2A2.4 2.4 0 0 0 7.4 21h9.2a2.4 2.4 0 0 0 2.4-2.4V8l-5-5Z"/><path d="M14 3v5h5"/></svg>打印 / 存为 PDF</button></li>
+        </ul>
+
+        <div class="side-block">
+          <p class="side-title">智能软件工程研究组</p>
+          <p class="side-text">隶属南通大学人工智能与计算机学院，研究智能软件工程、软件仓库挖掘、软件测试与维护。<a href="group/index.html">了解课题组 →</a></p>
+        </div>
+
+        <div class="side-card">
+          <p class="card-title">招收硕士研究生</p>
+          <p class="card-text">每年 3–4 人，方向包括大语言模型、深度学习与软件工程。也欢迎本科生参与科研与竞赛。</p>
+          <a class="card-link" href="mailto:xchencs@ntu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m3.7 7 8.3 6 8.3-6"/></svg><span>xchencs@ntu.edu.cn</span></a>
+        </div>
+
+        <div class="side-meta">
+          <span class="meta-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6.6-5.6 6.6-11A6.6 6.6 0 0 0 5.4 10c0 5.4 6.6 11 6.6 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>南通 <time id="localtime">--:--</time></span>
+          <span class="meta-item">更新于 2026 年 10 月</span>
+        </div>
+    </aside>
+
+    <main id="main" class="content">
+      <h1 class="sr-only">陈翔 · 南通大学 人工智能与计算机学院</h1>
+      <p class="lede">我的研究位于人工智能与软件工程的交叉处：围绕<strong>软件漏洞</strong>、<strong>软件测试</strong>与<strong>代码大模型</strong>，研究程序缺陷的理解、检测与自动修复。现为南通大学人工智能与计算机学院副教授、硕士生导师，负责<a href="group/index.html">智能软件工程研究组</a>。</p>
+
+      <section class="section" id="research">
+        <h2>研究兴趣</h2>
+        <div class="section-body">
+          <dl class="interests">
+            <div class="interest"><dt>软件漏洞</dt><dd>漏洞的检测、评估、类型预测与自动修复</dd></div>
+            <div class="interest"><dt>代码大模型</dt><dd>LLM4SE、代码生成与代码模型安全（后门、投毒与防御）</dd></div>
+            <div class="interest"><dt>竞赛程序生成</dt><dd>面向算法题目的程序生成、修复与自动评测</dd></div>
+            <div class="interest"><dt>缺陷预测</dt><dd>代码变更表示、即时缺陷与漏洞预测、提交信息生成</dd></div>
+            <div class="interest"><dt>软件测试</dt><dd>测试用例生成、回归测试、组合测试与变异测试</dd></div>
+            <div class="interest"><dt>仓库挖掘</dt><dd>Stack Overflow 挖掘、代码摘要、代码与 API 搜索</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <h2>教育与工作经历</h2>
+        <ul class="rows">
+          <li class="row">
+            <div class="when">2011 — 至今</div>
+            <div>
+              <p class="primary">副教授 · 硕士生导师 <span class="place">南通大学 人工智能与计算机学院</span></p>
+              <p class="secondary">软件工程系；智能软件工程研究组负责人</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="when">2018 — 2019</div>
+            <div>
+              <p class="primary">访问学者 <span class="place">南洋理工大学 网络安全实验室（新加坡）</span></p>
+              <p class="secondary">合作导师 <a href="http://www.ntu.edu.sg/home/yangliu/">Yang Liu</a> 教授；江苏省政府留学金资助</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="when">2009</div>
+            <div>
+              <p class="primary">访问学者 <span class="place">苏黎世大学 软件演化与体系结构实验室（瑞士）</span></p>
+              <p class="secondary">合作导师 <a href="http://www.ifi.uzh.ch/en/seal/people/gall.html">Harald C. Gall</a> 教授；南京大学资助</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="when">2011</div>
+            <div>
+              <p class="primary">博士 · 计算机科学与技术 <span class="place">南京大学</span></p>
+              <p class="secondary">导师 <a href="https://cs.nju.edu.cn/58/29/c2639a153641/page.htm">陈道蓄</a> 教授、<a href="https://isetnju.github.io/guq/index.html">顾庆</a> 教授</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="when">2008</div>
+            <div>
+              <p class="primary">硕士 · 计算机科学与技术 <span class="place">南京大学</span></p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="when">2002</div>
+            <div>
+              <p class="primary">学士 · 管理学 <span class="place">西安交通大学 管理学院</span></p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="publications">
+        <h2>代表性成果</h2>
+        <div class="section-body">
+          <p class="note">* 通讯作者，<span class="me">下划线</span>为本人。完整列表见<a href="publications.html">论文页</a>、<a href="https://scholar.google.com/citations?hl=en&amp;user=Q2w5lq0AAAAJ">Google Scholar</a> 与 <a href="https://dblp.uni-trier.de/pid/64/3062-5.html">DBLP</a>。</p>
+          <ol class="pubs">
+            <li data-num="1">
+              <p class="pub-title">Semantic Consensus Decoding: Backdoor Defense for Verilog Code Generation</p>
+              <p class="pub-authors">Guang Yang, Xing Hu, <strong>Xiang Chen</strong>, Xin Xia</p>
+              <p class="pub-venue"><span class="pub-tag">TSE</span><em>IEEE Transactions on Software Engineering</em> · 2026 · CCF A</p>
+            </li>
+            <li data-num="2">
+              <p class="pub-title">Towards High-Quality Neural Program Repair: Learning from Positive Code Changes</p>
+              <p class="pub-authors">Zongwen Shen, Xvxing Ding, Wenkang Zhong, <strong>Xiang Chen</strong>, Jidong Ge, Chuanyi Li, Xuewei Zhang, Liguo Huang, Bin Luo</p>
+              <p class="pub-venue"><span class="pub-tag">TOSEM</span><em>ACM Transactions on Software Engineering and Methodology</em> · 2026 · CCF A</p>
+            </li>
+            <li data-num="3">
+              <p class="pub-title">FURINA: A Multi-Agent Framework for Automated Patch Correctness Assessment</p>
+              <p class="pub-authors">Yuning Li, Yuanjie Ji, <strong>Xiang Chen</strong>, Zongwen Shen, Jidong Ge, Bin Luo</p>
+              <p class="pub-venue"><span class="pub-tag">TOSEM</span><em>ACM Transactions on Software Engineering and Methodology</em> · 2026 · CCF A</p>
+            </li>
+            <li data-num="4">
+              <p class="pub-title">Large Language Model for Verilog Code Generation: Literature Review and the Road Ahead</p>
+              <p class="pub-authors">Guang Yang, Wei Zheng, Dong Liang, …, <strong>Xiang Chen</strong>, Xing Hu, Terry Yue Zhuo, David Lo</p>
+              <p class="pub-venue"><span class="pub-tag">CSUR</span><em>ACM Computing Surveys</em> · 2026 · CCF A</p>
+            </li>
+            <li data-num="5">
+              <p class="pub-title">QTC4SO: Automatic Question Title Completion for Stack Overflow</p>
+              <p class="pub-authors">Yanlin Zhou, Shaoyang Yang, <strong>Xiang Chen*</strong>, Zichen Zhang, Jiahua Pei</p>
+              <p class="pub-venue"><span class="pub-tag">ICPC</span><em>ICPC 2023</em> · 2023 · CCF B</p>
+              <p class="pub-extra">🏆 ACM SIGSOFT Distinguished Paper Award（2/22）</p>
+            </li>
+            <li data-num="6">
+              <p class="pub-title">Automated Query Reformulation for Efficient Search Based on Query Logs from Stack Overflow</p>
+              <p class="pub-authors">Kaibo Cao, Chuyang Chen*, Sebastian Baltes, Christoph Treude, <strong>Xiang Chen*</strong></p>
+              <p class="pub-venue"><span class="pub-tag">ICSE</span><em>ICSE 2021</em> · 2021 · CCF A</p>
+              <p class="pub-extra">🏆 ACM SIGSOFT Distinguished Paper Award</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <h2>科研项目</h2>
+        <ul class="rows">
+          <li class="row">
+            <div class="when">61202006</div>
+            <div><p class="primary">国家自然科学基金</p></div>
+          </li>
+          <li class="row">
+            <div class="when">BK2012023</div>
+            <div><p class="primary">江苏省高校自然科学研究项目</p></div>
+          </li>
+          <li class="row">
+            <div class="when">JC2021124 等</div>
+            <div><p class="primary">南通市应用研究计划</p><p class="secondary">JC2021124、JC2019106、JC2018134、12KJB520014</p></div>
+          </li>
+          <li class="row">
+            <div class="when">KFKT2024B21 等</div>
+            <div><p class="primary">南京大学 计算机软件新技术国家重点实验室开放课题</p><p class="secondary">KFKT2024B21、KFKT2019B14、KFKT2016B18、KFKT2012B29</p></div>
+          </li>
+          <li class="row">
+            <div class="when">2020-MS-07</div>
+            <div><p class="primary">中国科学院信息工程研究所 信息安全国家重点实验室开放课题</p></div>
+          </li>
+          <li class="row">
+            <div class="when">kx202012 等</div>
+            <div><p class="primary">广西可信软件重点实验室开放课题</p><p class="secondary">kx202012、kx201610</p></div>
+          </li>
+          <li class="row">
+            <div class="when">NJ2020022</div>
+            <div><p class="primary">南京航空航天大学 高安全系统的软件开发与验证技术 工信部重点实验室开放课题</p></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="service">
+        <h2>学术服务</h2>
+        <div class="section-body">
+          <div class="service-cols">
+            <div>
+              <h3>期刊编委与审稿</h3>
+              <ul>
+                <li><strong>Information and Software Technology</strong>（CCF B）Editorial Board Member，2022 —</li>
+                <li>IEEE TSE、ACM TOSEM、ACM CSUR、IEEE TDSC（CCF A）审稿人</li>
+                <li>EMSE、JSS、ASE、STVR、SQJ 等 CCF B 期刊审稿人</li>
+                <li>《软件学报》《计算机学报》《中国科学：信息科学》审稿人</li>
+              </ul>
+            </div>
+            <div>
+              <h3>会议程序委员会</h3>
+              <ul>
+                <li>FSE 2026、QRS 2026、Internetware 2025 / 2026、ICSS 2026</li>
+                <li>ICECCS 2025、COMPSAC 2025、SEKE 2021 — 2024</li>
+                <li>DSA 2021 / 2022、APSEC 2020、NASAC 2020</li>
+              </ul>
+            </div>
+            <div>
+              <h3>学会与兼职</h3>
+              <ul>
+                <li>CCF 高级会员；系统软件专委会执行委员（2019 —）</li>
+                <li>软件工程专委会执行委员（2020 —）</li>
+                <li>ACM、IEEE 会员</li>
+                <li>南通市青联委员、南通市杰出青年岗位能手</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="positions">
+        <h2>招生与合作</h2>
+        <div class="section-body">
+          <div class="prose">
+            <p>每年招收智能科学与技术（学硕）、计算机技术（专硕）、人工智能（专硕）硕士生 3–4 人，方向涉及大语言模型、深度学习、自然语言处理与软件工程。也欢迎学有余力的本科生加入课题组，参与算法竞赛、创新创业竞赛和基于大语言模型的软件工程研究。</p>
+            <p>希望学生：踏实刻苦、自我驱动；有较强的自学能力与编程能力。</p>
+            <p>联系邮箱：<a href="mailto:xchencs@ntu.edu.cn">xchencs@ntu.edu.cn</a>。指导学生的<a href="honors.html">获奖情况</a>与<a href="group/member.html">毕业去向</a>可参考相应页面。</p>
+            <p>也欢迎同行在软件工程（TSE、TOSEM、ICSE、FSE、ISSTA、ASE）、网络与信息安全（TDSC、TIFS、CCS、S&amp;P、USENIX Security、NDSS）与人机交互（CHI、UIST）方向与我们合作。</p>
+            <img src="images/wx.png" alt="课题组微信公众号二维码" width="320" height="104" loading="lazy">
+            <p class="note">扫码关注课题组微信公众号</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>联系方式</h2>
+        <div class="section-body">
+          <ul class="rows">
+            <li class="row">
+              <div class="when">地址</div>
+              <div><p class="primary">江苏省南通市啬园路 9 号 南通大学 34 号楼 1406 室 <span class="place">226019</span></p></div>
+            </li>
+            <li class="row">
+              <div class="when">邮箱</div>
+              <div><p class="primary"><a href="mailto:xchencs@ntu.edu.cn">xchencs@ntu.edu.cn</a></p></div>
+            </li>
+            <li class="row">
+              <div class="when">主页</div>
+              <div><p class="primary"><a href="https://scholar.google.com/citations?hl=en&amp;user=Q2w5lq0AAAAJ">Google Scholar</a> · <a href="https://dblp.uni-trier.de/pid/64/3062-5.html">DBLP</a> · <a href="https://github.com/xchencs">GitHub</a></p></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+  </div>
 </div>
 
-<div>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 陈翔 · Xiang Chen</p>
+    <p>最近更新：2026 年 10 月</p>
+  </div>
+</footer>
 
-
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?cl=ffffff&w=200&h=125&t=tt&d=FuqCm0D1Cx5rY2Uc5pFWrepGbPojWDNBh4nr78PhyAw"></script>
-
-</td>
-</tr>
-<tr valign="top">
-  <td id="layout-menu">&nbsp;</td>
-  <td id="layout-content">&nbsp;</td>
-</tr>
-</table>
-
+<script src="assets/site.js"></script>
 </body>
 </html>
-
-
