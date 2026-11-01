@@ -364,8 +364,7 @@ p { text-wrap: pretty; }
   line-height: 2;
 }
 
-.side-contact a,
-.side-contact button.cv-print {
+.side-contact a {
   display: inline-flex;
   align-items: center;
   gap: 9px;
@@ -392,11 +391,9 @@ p { text-wrap: pretty; }
   color: var(--faint);
 }
 
-.side-contact a:hover,
-.side-contact button.cv-print:hover { color: var(--ink); text-decoration: none; }
+.side-contact a:hover { color: var(--ink); text-decoration: none; }
 
-.side-contact a:hover svg,
-.side-contact button.cv-print:hover svg { color: var(--ink); }
+.side-contact a:hover svg { color: var(--ink); }
 
 .side-block {
   grid-column: 1 / -1;

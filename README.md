@@ -17,7 +17,7 @@
 | `group/index.html` | 智能软件工程研究组简介与负责人介绍 |
 | `group/member.html` | 团队成员（按入学年份分组，已毕业标注去向） |
 | `group/picture.html` | 课题组相册 |
-| `group/material.html`、`group/journal.html`、`group/book.html`、`group/honors.html` | 资料、期刊会议、教材慕课、学科竞赛 |
+| `group/material.html`、`group/journal.html`、`group/book.html` | 资料、期刊会议、教材 |
 | `algorithm.html`、`softwaretesting.html`、`advancedsoftwaretesting.html` | 课程页面 |
 | `internal/main.html` | 课题组内部资料（`noindex`） |
 
@@ -39,7 +39,7 @@
 ## 样式与脚本
 
 - `assets/style.css`：全部样式。颜色、字体、版心集中在 `:root`，深色模式只覆盖同名变量（`[data-theme="dark"]`）；
-  文件末尾的 `@media print` 把页面排成 A4，配合侧栏「打印 / 存为 PDF」可以导出简历。
+  文件末尾的 `@media print` 把页面排成 A4，用浏览器自带的打印（Ctrl+P / ⌘P）即可导出 PDF。
 - `assets/site.js`：主题切换（记住选择，也支持 `?theme=dark` 直接预览）、侧栏本地时间、当前页导航高亮、
   论文分区筛选、相册灯箱、文献库检索。
 - `assets/favicon.svg`：站点图标。
