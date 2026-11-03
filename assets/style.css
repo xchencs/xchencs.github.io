@@ -922,6 +922,7 @@ p { text-wrap: pretty; }
   width: 100%;
   height: 170px;
   object-fit: cover;
+  object-position: center top;
   border-radius: 6px;
   border: 1px solid var(--rule-soft);
   cursor: zoom-in;
